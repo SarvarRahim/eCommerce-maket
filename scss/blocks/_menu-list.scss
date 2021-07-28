@@ -1,0 +1,38 @@
+.menu-list {
+  @include listunstyled;
+  margin-top: 16px;
+  margin-bottom: 60px;
+}
+
+.menu-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.menu-list__link {
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 19px;
+  color: $color-secondary;
+  transition: color 0.4s ease;
+
+    &:hover {
+      color: $color-secondary-light;
+    }
+
+    &:active {
+      color: $color-secondary-active;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+
+  .menu-list__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+}
