@@ -1,0 +1,114 @@
+.product-card__list {
+  @include listunstyled;
+  display: flex;
+  align-items: center;
+}
+
+.product-card__item {
+  position: relative;
+  z-index: 9;
+  width: 270px;
+  padding: 16px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+}
+
+.product-card__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.product-card__img {
+  display: block;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.product-card__sale {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-secondary;
+  background-color: #F4F8EC;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 16px;
+}
+
+.product-card__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-primary;
+  margin-top: 16px;
+}
+
+.product-card__desc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #575757;
+  margin-top: 4px;
+}
+
+.product-card__buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product-card__price {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-primary;
+}
+
+.product-card__end {
+  display: inline-block;
+  text-decoration: line-through;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.product-card__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  padding: 10px 10px;
+  background-color: $color-secondary;
+  border-radius: 12px;
+  border: 2px solid #4a692a;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-secondary-light;
+  }
+
+  &:active {
+    background-color: $color-secondary-active;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .product-card__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .product-card__item:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
