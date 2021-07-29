@@ -86,9 +86,39 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
+  .blog-card {
+    flex-direction: row;
+  }
+
   .blog-card__item {
     width: 320px;
+  }
+
+  .blog-card__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .blog-card {
+    flex-direction: column;
+  }
+
+  .blog-card__item {
+    width: 100%;
+  }
+
+  .blog-card__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .blog-card__item {
+    width: 100%;
   }
 
   .blog-card__head {
