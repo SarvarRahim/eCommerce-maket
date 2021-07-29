@@ -5,3 +5,9 @@
   justify-content: space-between;
   padding: 64px 45px;
 }
+
+@media only screen and (max-width: 480px) {
+  .index-blog {
+    padding: 30px 35px;
+  }
+}
