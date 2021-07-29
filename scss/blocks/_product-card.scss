@@ -2,6 +2,9 @@
   @include listunstyled;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 42px;
+  margin-bottom: -25px;
 }
 
 .product-card__item {
@@ -11,16 +14,18 @@
   padding: 16px;
   border: 1px solid #d1d1d1;
   border-radius: 12px;
+  margin-bottom: 25px;
 }
 
 .product-card__item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 28px;
 }
 
 .product-card__img {
   display: block;
   border-radius: 12px;
   background-color: #f9f9f9;
+  object-fit: cover;
 }
 
 .product-card__sale {
@@ -105,10 +110,29 @@
 @media only screen and (max-width: 950px) {
   .product-card__list {
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .product-card__item {
+    width: 45%;
   }
 
   .product-card__item:not(:last-child) {
     margin-bottom: 22px;
+    margin-right: 20;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .product-card__list {
+    // flex-direction: column;
+  }
+
+  .product-card__item {
+    width: 100%;
+  }
+
+  .product-card__item:not(:last-child) {
+    margin-right: 0;
   }
 }
