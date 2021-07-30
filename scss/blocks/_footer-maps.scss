@@ -1,12 +1,14 @@
 .footer-maps {
   display: flex;
-  flex-wrap:  wrap;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
-.footer-map:not(:last-child){
+
+.footer-map:not(:last-child) {
   margin-right: 200px;
 }
-.footer-map{
+
+.footer-map {
   width: 120px;
 }
 
@@ -29,6 +31,7 @@
   margin-bottom: 19px;
 }
 
+
 .footer-maps__link {
   text-decoration: none;
   display: inline-block;
@@ -40,34 +43,45 @@
   white-space: nowrap;
 }
 
-.footer-maps__link:hover{
+.footer-maps__link:hover {
   color: $color-secondary-light;
 }
 
-.footer-maps__link:active{
+.footer-maps__link:active {
   color: $color-secondary-active;
 }
 
-
-@media only screen and (max-width: 768px){
-  .footer-map:not(:last-child){
+@media only screen and (max-width: 1000px) {
+  .footer-map:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 20px;
   }
 
-  .footer-map{
+  .footer-map {
     width: 50%;
     margin: 0;
   }
 }
 
-@media only screen and (max-width: 400px){
-  .footer-map{
+@media only screen and (max-width: 768px) {
+  .footer-map:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .footer-map {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .footer-map {
     display: block;
     width: 100%;
-    text-align: center;
   }
-  .footer-map:not(:last-child){
+
+  .footer-map:not(:last-child) {
     margin-bottom: 40px;
     margin-right: 0;
   }

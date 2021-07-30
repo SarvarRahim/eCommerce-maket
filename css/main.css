@@ -427,7 +427,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .site-header__middle {
@@ -1023,6 +1024,17 @@ body {
   color: rgba(106, 152, 60, 0.6);
 }
 
+@media only screen and (max-width: 1000px) {
+  .footer-map:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .footer-map {
+    width: 50%;
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .footer-map:not(:last-child) {
     margin-right: 0px;
@@ -1034,11 +1046,10 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .footer-map {
     display: block;
     width: 100%;
-    text-align: center;
   }
   .footer-map:not(:last-child) {
     margin-bottom: 40px;
