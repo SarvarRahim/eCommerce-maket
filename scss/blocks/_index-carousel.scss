@@ -1,0 +1,125 @@
+.carousel {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-top: 2px solid #f9f9f9;
+  border-bottom: 2px solid #f9f9f9;
+  overflow: hidden;
+}
+
+.carousel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.carousel__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-primary;
+}
+
+.carousel__btn {
+  display: flex;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-image: url("../../img/icon-arrow-green-right.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+}
+
+.carousel__arrows {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel__next {
+  position: absolute;
+  z-index: 5;
+  top: 38%;
+  left: 0;
+  width: 32px;
+  height: 48px;
+  border: 0;
+  background-color: $color-primary;
+  background-image: url("../../img/ic-chevron-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+}
+
+.carousel__next--right {
+  left: 1228px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-image: url("../../img/ic-chevron-right.svg");
+}
+
+
+.carousel__list {
+  @include listunstyled;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__item {
+  position: relative;
+  z-index: 1;
+  width: 370px;
+  padding: 24px 32px 40px 32px;
+  border: 1px solid #F1F1F1;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.carousel__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.carousel__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.carousel__user {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #A9A9A9;
+  margin-top: 24px;
+}
+
+.carousel__img {
+  position: absolute;
+  z-index: 1;
+  bottom: -13%;
+  right: 43%;
+  border-radius: 50%;
+}
