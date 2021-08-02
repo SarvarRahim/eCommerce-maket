@@ -1,9 +1,33 @@
 .index-product {
   display: flex;
-  align-items: center;
+  // align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 64px 45px;
+}
+
+.index-product__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1180px) {
+  .index-product {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .index-product {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .index-product {
+    padding: 40px 45px;
+  }
 }
 
 @media only screen and (max-width: 480px) {

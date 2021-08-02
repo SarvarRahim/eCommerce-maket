@@ -66,8 +66,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #f9f9f9;
-  width: 96px;
+  background-color: $color-secondary;
+  padding: 8px 12px;
+  width: 150px;
   z-index: 100;
   position: absolute;
 }
@@ -85,9 +86,9 @@
   white-space: nowrap;
   text-decoration: none;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 22px;
-  color: #151515;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
   transition: color 0.3s ease;
 
   &:hover{
@@ -114,11 +115,13 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      background-color: #f9f9f9;
-      width: 96px;
+      background-color: $color-secondary;
+      width: 140px;
       z-index: 100;
+      padding: 8px 14px;
+      padding-right: 20px;
       position: absolute;
-      left: -100px;
+      right: 120%;
       top: 0;
     }
   }

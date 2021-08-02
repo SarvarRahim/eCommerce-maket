@@ -6,7 +6,7 @@
 }
 
 .site-header__account--item:not(:last-child) {
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .site-header__account--link {
@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: 685px) {
   .site-header__account--item:not(:last-child) {
-    margin-right: 20px;
+    margin-left: 15px;
   }
 
   .site-header__account--burger {

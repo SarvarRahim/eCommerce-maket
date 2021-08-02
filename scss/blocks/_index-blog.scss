@@ -50,6 +50,12 @@
     margin-bottom: 35px;
   }
 
+  @media only screen and (max-width: 850px) {
+    .index-blog {
+      padding: 40px 45px;
+    }
+  }
+
   @media only screen and (max-width: 480px) {
     .index-blog {
       padding: 30px 35px;
