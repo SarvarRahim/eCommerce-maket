@@ -247,7 +247,7 @@
               <p class="product-card__desc">Space for a small product description</p>
               <div class="product-card__buy">
                 <p class="product-card__price">1.48 USD</p>
-                <button class="product-card__link">Buy now</button>
+                <a class="product-card__link" href="buynow.html">Buy now</a>
               </div>
             </li>
             <li class="product-card__item">
@@ -377,10 +377,6 @@
     </section>
 
         <section class="index-product">
-          <!-- <div class="index-product__head">
-            <h2 class="index-product__title">Section Headline</h2>
-            <a class="index-product__link" href="#">Button</a>
-          </div> -->
         <div class="product-card">
           <ul class="product-card__list">
             <li class="product-card__item">
@@ -435,70 +431,80 @@
         </div>
       </section>
 
-      <section class="posts">
-        <div class="posts__head">
-          <h2 class="posts__title">Read our Blog posts</h2>
+      <!-- INDEX POSTS -->
+      <section class="post">
+        <header class="post__header">
+          <h2 class="post__heading">Read our blog posts</h2>
           <a class="carousel__btn" href="#">Go to blog</a>
-        </div>
-        <div class="posts__wrapper">
-          <div class="posts__author">
-            <span class="posts__tips">Dinner tips</span>
-            <h3 class="posts__info">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
-            <div class="posts__author-info">
-              <img src="img/quote-img-male.png" alt="Author food" width="32" height="32">
-              <p class="posts__author-desc">Author</p>
-              <time datetime="2020-12-13">17.6.2020</time>
+        </header>
+
+        <div class="post__box">
+          <a class="post__link-box" href="#">
+            <div class="post__card">
+              <span class="post__card-info">Dinner tips</span>
+              <h3 class="post__card-heading">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+              <div class="post__author">
+                <span class="post__author-name">Author</span>
+                <time class="post__author-time" datetime="2020-6-17 12:00">17. 6. 2020</time>
+              </div>
             </div>
-          </div>
-
-          <div class="posts-vegetable">
-            <img class="posts-vegetabel__img" src="img/posts-img-second.png" alt="Vetable food" width="270" height="180">
-           <div class="posts-vegetable__desc">
-            <span class="posts__tips">Vegetable</span>
-            <h3 class="posts-vegetable__title">Which vegetable your family will love and want’s eat each day</h3>
-            <div class="posts__vegetable-date">
-            <p class="posts__vegetable-name">Author</p>
-            <time class="posts__vegetable-time" datetime="2020-12-13">15.6.2020</time>
-          </div>
-           </div>
-          </div>
-
-        <div class="post-salats">
-          <ul class="post-salats__list">
-            <li class="post-salats__item">
-              <div class="post-salats__content">
-                <h3 class="post-salats__content-info">Salat is kinda good start to your morning routines</h3>
-                <div class="posts__vegetable-date">
-                  <p class="posts__vegetable-name">Author</p>
-                  <time class="posts__vegetable-time" datetime="2020-12-13">15.6.2020</time>
+          </a>
+          <div class="post__eat-box">
+            <a class="post__eat-links post__eat-column" href="#">
+              <div class="post__eat-column-card">
+                <span class="post__column-info">
+                  Vegetable
+                </span>
+                <h3 class="post__column-heading">
+                  Which vegetable your family will love and want’s eat each day
+                </h3>
+                <div class="post__column-author">
+                  <span class="post__column-author-name">Author</span>
+                  <time class="post__column-author-time" datetime="2020-6-15 12:00">15. 6. 2020</time>
                 </div>
               </div>
-              <img class="post-salats__img" src="img/posts-item-img-one.png" alt="Salat morning" width="96" height="96">
-            </li>
-            <li class="post-salats__item">
-              <div class="post-salats__content">
-                <h3 class="post-salats__content-info">Our chef tips for a great and healthy breakfast</h3>
-                <div class="posts__vegetable-date">
-                  <p class="posts__vegetable-name">Author</p>
-                  <time class="posts__vegetable-time" datetime="2020-12-13">15.6.2020</time>
-                </div>
-              </div>
-              <img class="post-salats__img" src="img/posts-item-img-two.png" alt="Salat breakfast" width="96" height="96">
-            </li>
-            <li class="post-salats__item">
-              <div class="post-salats__content">
-                <h3 class="post-salats__content-info">Prepare a simple and delicious breads</h3>
-                <div class="posts__vegetable-date">
-                  <p class="posts__vegetable-name">Author</p>
-                  <time class="posts__vegetable-time" datetime="2020-12-13">15.6.2020</time>
-                </div>
-              </div>
-              <img class="post-salats__img" src="img/posts-item-img-three.png" alt="Salat breads" width="96" height="96">
-            </li>
-          </ul>
+            </a>
+            <ul class="post__eat-list">
+              <li class="post__eat-item">
+                <a class="post__eat-link post__salat" href="#">
+                  <div class="post__feature">
+                    <h3 class="post__eat-heading">Salat is kinda good start to your morning routines </h3>
+                    <div class="post__eat-author">
+                      <span class="post__eat-author-name">Author</span>
+                      <time class="post__eat-author-time" datetime="2020-1-11 12:00">11.1.2020</time>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="post__eat-item">
+                <a class="post__eat-link post__breakfast" href="#">
+                  <div class="post__feature">
+                    <h3 class="post__eat-heading">Our chef tips for a great and healthy breakfast</h3>
+                    <div class="post__eat-author">
+                      <span class="post__eat-author-name">Author</span>
+                      <time class="post__eat-author-time" datetime="2020-1-11 12:00">11.1.2020</time>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="post__eat-item">
+                <a class="post__eat-link post__bread" href="#">
+                  <div class="post__feature">
+                    <h3 class="post__eat-heading">Prepare a simple and delicious breads</h3>
+                    <div class="post__eat-author">
+                      <span class="post__eat-author-name">Author</span>
+                      <time class="post__eat-author-time" datetime="2020-1-11 12:00">11.1.2020</time>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+
+
       </section>
+
 
     </main>
     <!-- FOOTER -->
