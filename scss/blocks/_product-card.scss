@@ -22,10 +22,11 @@
 }
 
 .product-card__img {
+  width: 100%;
+  height: auto;
   display: block;
   border-radius: 12px;
   background-color: #f9f9f9;
-  object-fit: cover;
 }
 
 .product-card__sale {
@@ -114,12 +115,12 @@
   }
 
   .product-card__item {
-    width: 45%;
+    width: calc(100% / 3 - 22px);
   }
 
   .product-card__item:not(:last-child) {
     margin-bottom: 22px;
-    margin-right: 20;
+    margin-right: 20px;
   }
 }
 
@@ -131,4 +132,8 @@
   .product-card__item:not(:last-child) {
     margin-right: 0;
   }
+}
+
+@media only screen and (max-width: 600px) {
+
 }

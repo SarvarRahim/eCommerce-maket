@@ -1,0 +1,26 @@
+.post-salats__list {
+  width: 370px;
+  @include listunstyled;
+}
+
+.post-salats__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-salats__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.post-salats__content {
+  width: 250px;
+}
+
+.post-salats__content-info {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-primary;
+}

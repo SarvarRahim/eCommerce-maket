@@ -55,7 +55,6 @@
   position: absolute;
   z-index: 5;
   top: 38%;
-  left: 0;
   width: 32px;
   height: 48px;
   border: 0;
@@ -69,7 +68,7 @@
 }
 
 .carousel__next--right {
-  left: 1228px;
+  right: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-top-left-radius: 12px;
