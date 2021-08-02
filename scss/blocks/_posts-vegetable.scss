@@ -1,0 +1,35 @@
+.posts-vegetable {
+  width: 270px;
+  margin-right: 32px;
+}
+
+.posts-vegetabel__img {
+  display: block;
+  border-radius: 12px;
+}
+
+.posts-vegetable__desc {
+  margin-top: 24px;
+}
+
+.posts-vegetable__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 8px;
+}
+
+.posts__vegetable-date {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-primary;
+}
+
+.posts__vegetable-name {
+  margin: 0;
+  margin-right: 16px;
+}
