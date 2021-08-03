@@ -1,0 +1,77 @@
+.product-filter {
+  padding: 16px 0;
+}
+
+.prodcut-filter__list-box {
+  display: flex;
+  align-items: center;
+}
+
+.product-filter__list-info {
+  white-space: nowrap;
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.prodcut-filter__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-filter__item {
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0px 4px;
+  color: $color-secondary;
+  background: #F4F8EC;
+  border-radius: 12px;
+  margin: 0px 12px;
+  padding: 0 8px;
+
+}
+
+.product-filter__item::after{
+  margin-left: 7px;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-image: url("../../img/cancel-green.svg");
+  background-size: contain;
+  background-position: center center;
+  display: block;
+}
+
+@include breakpoint-down(780px){
+  .prodcut-filter__list-box{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .product-filter__list-info{
+    margin-bottom: 8px;
+  }
+
+  .prodcut-filter__list{
+    margin-bottom: 10px;
+    display: block;
+  }
+  .product-filter__item{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .product-filter__item:not(:last-child){
+    margin-bottom: 10px;
+  }
+
+}
