@@ -1,0 +1,133 @@
+.filter-form{
+  display: flex;
+  width: 100%;
+}
+.filter-form__box {
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+.filter-form__box:not(:last-child){
+  margin-right: 16px;
+}
+
+.filter-form__label{
+  display: flex;
+  align-items: center;
+}
+
+.filter-form__label:not(:last-child) {
+  margin-right: 20px;
+}
+
+.filter-form__content{
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.filter-form__radio-content::before {
+   flex-shrink: 0;
+   margin-right: 8px;
+   content: '';
+}
+
+/* RADIO GROUP  FORM FILTER*/
+
+.filter-form__radio-content::before {
+  flex-shrink: 0;
+  margin-right: 8px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  transition: border 0.15s ease;
+}
+
+.filter-form__input-radio:checked ~ .filter-form__content::before {
+  border: 6px solid;
+}
+
+/* CHECKBOX  FORM FILTER*/
+
+.filter-form__label-checkbox{
+  margin-right: 8px;
+}
+
+.filter-form__label-checkbox:not(:last-child){
+  margin-right: 8px;
+}
+
+.filter-form__checkbox-content::before {
+  margin: 0;
+  margin-right: 8px;
+  content: "";
+  display: block;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.filter-form__input-checkbox:checked ~ .filter-form__checkbox-content::before{
+  border-color: $color-secondary;
+  background-image: url("../../img/correct.svg");
+  background-size: 13px 10px;
+  background-color: $color-secondary;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.filter-form__addition{
+  padding: 0 8px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+
+.filter-form__select {
+  margin-left: 24px;
+}
+
+.filter-form__select-box{
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.filter-form__select-box::before{
+  content: '';
+  display: block;
+  height: 20px;
+  width: 1px;
+  background-color: #d1d1d1;
+}
+
+.filter-form__select {
+  border: none;
+  background-color: transparent;
+}
+
+
+@media only screen and (max-width : 950px) {
+  .filter-form{
+    flex-wrap: wrap;
+  }
+
+  .filter-form__box:not(:last-child){
+    margin-bottom: 20px;
+  }
+}
