@@ -28,3 +28,10 @@ var elNav = document.querySelector('.sitenav');
 elOpenNav.addEventListener('click', function() {
   elNav.classList.toggle('sitenav--open');
 });
+
+var elOpenNav = document.querySelector('.js-sitenav__icon-close');
+var elNav = document.querySelector('.sitenav');
+
+elOpenNav.addEventListener('click', function() {
+  elNav.classList.remove('sitenav--open');
+});
