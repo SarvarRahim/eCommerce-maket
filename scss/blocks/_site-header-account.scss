@@ -29,6 +29,7 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  padding: 0;
 
   &:hover {
     color: $color-secondary-light;
@@ -38,8 +39,6 @@
 .site-header__account--burger {
   display: inline-block;
   flex-shrink: 0;
-  position: relative;
-  z-index: 1;
   color: #000;
   background-color: transparent;
   border: 0;
@@ -73,7 +72,7 @@
 
 @media only screen and (max-width: 685px) {
   .site-header__account--item:not(:last-child) {
-    margin-left: 15px;
+    margin-left: 0;
   }
 
   .site-header__account--burger {

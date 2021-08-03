@@ -624,6 +624,7 @@ body {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  padding: 0;
 }
 
 .site-header__account--btn:hover {
@@ -634,8 +635,6 @@ body {
   display: inline-block;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  position: relative;
-  z-index: 1;
   color: #000;
   background-color: transparent;
   border: 0;
@@ -675,7 +674,7 @@ body {
 
 @media only screen and (max-width: 685px) {
   .site-header__account--item:not(:last-child) {
-    margin-left: 15px;
+    margin-left: 0;
   }
   .site-header__account--burger {
     display: inline-block;
@@ -690,6 +689,10 @@ body {
 
 .sitenav {
   background-color: #f9f9f9;
+}
+
+.sitenav__icon-close {
+  display: none;
 }
 
 .sitenav__list {
@@ -721,9 +724,9 @@ body {
 }
 
 .sitenav__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -790,7 +793,7 @@ body {
 }
 
 .sitenav__dropdown__link:hover {
-  color: rgba(106, 152, 60, 0.8);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (max-width: 1135px) {
@@ -804,24 +807,57 @@ body {
 
 @media only screen and (max-width: 685px) {
   .sitenav {
-    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    height: 100vh;
     background-color: #fff;
+    padding: 20px;
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: -webkit-transform 0.8s ease;
+    transition: transform 0.8s ease;
+    transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
-  .sitenav .sitenav__dropdown-list {
+  .sitenav__icon-close {
+    display: block;
+    margin-left: auto;
+  }
+  .sitenav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sitenav__dropdown-list {
+    position: static;
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: #6A983C;
+    background-color: transparent;
     width: 140px;
-    z-index: 100;
-    padding: 8px 14px;
-    padding-right: 20px;
-    position: absolute;
-    right: 120%;
-    top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .sitenav__dropdown__link {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .sitenav__item .sitenav__dropdown-list {
+    position: static;
   }
   .sitenav--open {
-    display: block;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    background-color: #fff;
   }
 }
 
@@ -830,17 +866,9 @@ body {
   background-color: #f9f9f9;
 }
 
-@media only screen and (max-width: 685px) {
-  .site-header__sitenav-box {
-    position: absolute;
-    z-index: 1;
-    top: 25%;
-    right: 0;
-    width: 40%;
-    height: auto;
-    background-color: #fff;
-    padding-top: 0;
-  }
+.site-header {
+  position: relative;
+  z-index: 1;
 }
 
 .site-header__top {
@@ -910,7 +938,7 @@ body {
   border-bottom: 1px solid #6A983C;
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 780px) {
   .site-header__top {
     display: none;
   }
@@ -1145,6 +1173,7 @@ body {
   padding: 48px 32px 32px 32px;
   background-image: url("../../img/card-bg-img.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 12px;
 }
 
@@ -1383,6 +1412,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .index-product {
+    display: block;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
