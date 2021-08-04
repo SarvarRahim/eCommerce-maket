@@ -1,0 +1,9 @@
+.reting-form__group:checked ~ .reting-form__star::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/ic-actions-star.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

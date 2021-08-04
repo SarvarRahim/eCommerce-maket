@@ -1,0 +1,37 @@
+.farm-product {
+  padding: 16px 45px;
+}
+
+.farm-product__sale-box {
+  position: relative;
+  z-index: 1;
+}
+
+.farm-product__img {
+  display: block;
+  // width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.farm-product__sale {
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  left: 2%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-secondary;
+  padding: 4px 10px;
+  background: #F4F8EC;
+  border-radius: 12px;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.farm-product__sale--shop {
+  left: 8%;
+}
