@@ -122,3 +122,10 @@
   right: 43%;
   border-radius: 50%;
 }
+
+@media only screen and (max-width: 480px) {
+  .carousel__head {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

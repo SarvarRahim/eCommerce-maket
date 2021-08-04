@@ -18,7 +18,7 @@
   width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 150px;
+  margin-top: 150px;
 }
 
 .search-modal__form {
@@ -32,12 +32,12 @@
   border: 1px solid #474747;
   background-image: url("../../img/icon-search.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 15px center;
 }
 
 @media only screen and (max-width: 680px) {
   .modal-dialog {
     max-width: 60%;
-    padding-top: 90px;
+    margin-top: 90px;
   }
 }
