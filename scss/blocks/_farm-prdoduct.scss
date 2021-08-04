@@ -2,9 +2,14 @@
   padding: 16px 45px;
 }
 
+.farm-product__content {
+  display: flex;
+}
+
 .farm-product__sale-box {
   position: relative;
   z-index: 1;
+  margin-right: 32px;
 }
 
 .farm-product__img {
@@ -33,5 +38,20 @@
 }
 
 .farm-product__sale--shop {
-  left: 8%;
+  left: 13%;
+}
+
+.farm-product__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  color: $color-primary;
+  margin-bottom: 8px;
+}
+
+.farm-product__star-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
