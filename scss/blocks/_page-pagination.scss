@@ -1,0 +1,25 @@
+.page-pagination {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ padding: 16px 45px;
+}
+
+.page-pagination__link {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  margin-right: 8px;
+
+  &:not(:last-child):after {
+    display: block;
+    content: "/";
+    margin-left: 8px;
+  }
+}
+
+.page-pagination__link--active {
+  color: $color-primary;
+}

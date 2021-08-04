@@ -807,6 +807,7 @@ body {
 
 @media only screen and (max-width: 685px) {
   .sitenav {
+    display: none;
     position: absolute;
     z-index: 100;
     top: 0;
@@ -818,8 +819,6 @@ body {
     transition: -webkit-transform 0.8s ease;
     transition: transform 0.8s ease;
     transition: transform 0.8s ease, -webkit-transform 0.8s ease;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
   .sitenav__icon-close {
     display: block;
@@ -850,7 +849,8 @@ body {
   .sitenav__item .sitenav__dropdown-list {
     position: static;
   }
-  .sitenav--open {
+  .sitenav--open .sitenav {
+    display: block;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     -webkit-transition: -webkit-transform 0.5s ease;
@@ -864,6 +864,12 @@ body {
 .site-header__sitenav-box {
   padding: 16px  45px;
   background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 685px) {
+  .site-header__sitenav-box {
+    padding: 0;
+  }
 }
 
 .site-header {
@@ -996,6 +1002,9 @@ body {
 .footer {
   padding: 64px 45px;
   background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .footer-maps {
@@ -2514,5 +2523,92 @@ body {
     font-size: 21px;
     line-height: 27px;
   }
+}
+
+.site-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.page-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 16px 45px;
+}
+
+.page-pagination__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  margin-right: 8px;
+}
+
+.page-pagination__link:not(:last-child):after {
+  display: block;
+  content: "/";
+  margin-left: 8px;
+}
+
+.page-pagination__link--active {
+  color: #151515;
+}
+
+.farm-product {
+  padding: 16px 45px;
+}
+
+.farm-product__sale-box {
+  position: relative;
+  z-index: 1;
+}
+
+.farm-product__img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+.farm-product__sale {
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  left: 2%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  padding: 4px 10px;
+  background: #F4F8EC;
+  border-radius: 12px;
+}
+
+.farm-product__sale:not(:last-child) {
+  margin-right: 12px;
+}
+
+.farm-product__sale--shop {
+  left: 8%;
+}
+
+.reting-form__group:checked ~ .reting-form__star::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/ic-actions-star.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
