@@ -5,12 +5,12 @@
   padding: 40px 45px;
 }
 
-.site-header__middle--link {
+.site-header__middle-link {
   text-decoration: none;
   padding-right: 25px;
 }
 
-.site-header__middle--img {
+.site-header__middle-img {
   display: block;
 }
 
@@ -49,16 +49,22 @@
     padding: 30px 45px;
   }
 
-  .site-header__middle--img{
+  .site-header__middle-img{
     width: 157px;
     height: 45px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .site-header__middle--img{
+  .site-header__middle-img{
     width: 137px;
     height: 45px;
+  }
+}
+
+@include breakpoint-down(480px) {
+  .site-header__middle {
+    padding: 30px 25px;
   }
 }
 
