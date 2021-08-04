@@ -489,7 +489,7 @@ body {
 /* MOBILE VERSION */
 @media only screen and (max-width: 540px) {
   .site-header__middle {
-    padding: 20px 25px;
+    padding: 30px 45px;
   }
   .site-header__middle--img {
     width: 157px;
@@ -674,7 +674,8 @@ body {
 
 @media only screen and (max-width: 685px) {
   .site-header__account--item:not(:last-child) {
-    margin-left: 0;
+    margin-left: 0px;
+    margin-right: 15px;
   }
   .site-header__account--burger {
     display: inline-block;
@@ -970,7 +971,7 @@ body {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 150px;
+  margin-top: 150px;
 }
 
 .search-modal__form {
@@ -989,13 +990,13 @@ body {
   border: 1px solid #474747;
   background-image: url("../../img/icon-search.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 15px center;
 }
 
 @media only screen and (max-width: 680px) {
   .modal-dialog {
     max-width: 60%;
-    padding-top: 90px;
+    margin-top: 90px;
   }
 }
 
@@ -1007,6 +1008,12 @@ body {
           flex-grow: 1;
 }
 
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 35px 25px;
+  }
+}
+
 .footer-maps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,12 +1023,10 @@ body {
   margin-bottom: 40px;
 }
 
-.footer-map:not(:last-child) {
-  margin-right: 200px;
-}
-
 .footer-map {
-  width: 120px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .footer__heading {
@@ -1062,7 +1067,7 @@ body {
   color: rgba(106, 152, 60, 0.6);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1055px) {
   .footer-map:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 40px;
@@ -1376,15 +1381,15 @@ body {
   }
 }
 
-@media only screen and (max-width: 1000px) and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
   .index-blog {
     padding: 40px 45px;
   }
 }
 
-@media only screen and (max-width: 1000px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .index-blog {
-    padding: 30px 35px;
+    padding: 30px 25px;
   }
 }
 
@@ -1434,8 +1439,8 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  .index-blog {
-    padding: 30px 35px;
+  .index-product {
+    padding: 30px 25px;
   }
 }
 
@@ -1804,6 +1809,13 @@ body {
   bottom: -13%;
   right: 43%;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel__head {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .posts {
@@ -2522,6 +2534,12 @@ body {
     font-weight: 600;
     font-size: 21px;
     line-height: 27px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .post {
+    padding: 30px 25px;
   }
 }
 
