@@ -1,0 +1,36 @@
+.rating-filter{
+
+}
+.rating-filter__box:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.rating-filter__label {}
+
+.rating-filter__input {}
+
+.rating-filter__content{
+  display: flex;
+  align-items: center;
+}
+
+.rating-filter__content::before {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  transition: border 0.3s ease, background-color 0.3s ease ;
+}
+
+.rating-filter__input:checked ~ .rating-filter__content::before{
+  background-color: $color-secondary;
+  background-image: url("../../img/correct.svg");
+  border-color: $color-secondary;
+}
+
+

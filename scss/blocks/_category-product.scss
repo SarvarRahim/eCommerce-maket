@@ -1,0 +1,21 @@
+.category-product {
+
+}
+
+.category-product__name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+.category-product__value {
+  padding: 0px 8px;
+  background: #F4F8EC;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-secondary;
+}
