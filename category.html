@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce</title>
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
@@ -183,7 +185,7 @@
 
   <main class="site-content">
     <!-- PRODUCT -->
-    <section class="product">
+    <section class="product product-grid">
       <div class="product-top">
         <span class="product-top__wrapper">
           <span class="product-top__page">Homepage /</span>
@@ -202,77 +204,439 @@
         </div>
       </header>
 
-        <form action="https://echo.htmlacademy.ru" method="POST" class="product-form">
-          <div class="product-filter filter-form">
+      <form action="https://echo.htmlacademy.ru" method="POST" class="product-form">
 
-            <!-- FILTER RADIO GROUP -->
-            <div class="filter-form__box">
-              <label class="filter-form__label">
-                <input class="filter-form__input visually-hidden filter-form__input-radio" type="radio"
-                  name="filter-text"
+        <!-- TOP FILTER  -->
+        <div class="product-filter filter-form">
+
+          <!-- FILTER RADIO GROUP -->
+          <div class="filter-form__box">
+            <label class="filter-form__label">
+              <input class="filter-form__input visually-hidden filter-form__input-radio" type="radio" name="filter-text"
                 value="filter-radio-2">
-                <span class="filter-form__content filter-form__radio-content">Filter text</span>
-              </label>
-              <label class="filter-form__label">
-                <input class="filter-form__input filter-form__input-radio visually-hidden" type="radio"
-                  name="filter-text" value="filter-radio-2">
-                <span class="filter-form__content filter-form__radio-content">Filter text</span>
-              </label>
+              <span class="filter-form__content filter-form__radio-content">Filter text</span>
+            </label>
+            <label class="filter-form__label">
+              <input class="filter-form__input filter-form__input-radio visually-hidden" type="radio" name="filter-text"
+                value="filter-radio-2">
+              <span class="filter-form__content filter-form__radio-content">Filter text</span>
+            </label>
+          </div>
+
+
+          <!-- CHECKBOX FILTER -->
+          <div class="filter-form__box">
+            <label class="filter-form__label filter-form__label-checkbox">
+              <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
+                name="filter-check-box-1">
+              <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
+            </label>
+
+            <span class="filter-form__addition">Nbm</span>
+          </div>
+
+          <!-- CHECKBOX FILTER -->
+          <div class="filter-form__box">
+            <label class="filter-form__label filter-form__label-checkbox">
+              <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
+                name="filter-check-box-1">
+              <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
+            </label>
+
+            <span class="filter-form__addition">Nbm</span>
+          </div>
+
+          <!-- CHECKBOX FILTER -->
+          <div class="filter-form__box">
+            <label class="filter-form__label filter-form__label-checkbox">
+              <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
+                name="filter-check-box-1">
+              <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
+            </label>
+
+            <span class="filter-form__addition">12</span>
+
+            <div class="filter-form__select-box">
+              <select class="filter-form__select" name="filter-form__select">
+                <option selected disabled>Select</option>
+                <option class="filter-form__select-option" value="Option-1">Select</option>
+                <option class="filter-form__select-option" value="Option-2">Option-1</option>
+                <option class="filter-form__select-option" value="Option-3">Option-2</option>
+                <option class="filter-form__select-option" value="Option-4">Option-3</option>
+              </select>
             </div>
+          </div>
 
 
-            <!-- CHECKBOX FILTER -->
-            <div class="filter-form__box">
-              <label class="filter-form__label filter-form__label-checkbox">
-                <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox" name="filter-check-box-1">
-                <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
-              </label>
+        </div>
 
-              <span class="filter-form__addition">Nbm</span>
-            </div>
+        <!-- FILLTERS LIST -->
+        <div class="prodcut-filter__list-box">
+          <span class="product-filter__list-info">Applied filters:</span>
+          <ul class="prodcut-filter__list">
+            <li class="product-filter__item">Selected filter</li>
+            <li class="product-filter__item">Selected filter</li>
+          </ul>
+        </div>
 
-            <!-- CHECKBOX FILTER -->
-            <div class="filter-form__box">
-              <label class="filter-form__label filter-form__label-checkbox">
-                <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox" name="filter-check-box-1">
-                <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
-              </label>
+        <div class="product-wrapper ">
 
-              <span class="filter-form__addition">Nbm</span>
-            </div>
+          <!-- CATEGORY FILTER AND PRODUCT -->
+          <section class="product-main">
+            <h2 class="visually-hidden">Product main</h2>
 
-            <!-- CHECKBOX FILTER -->
-            <div class="filter-form__box">
-              <label class="filter-form__label filter-form__label-checkbox">
-                <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox" name="filter-check-box-1">
-                <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
-              </label>
+            <!-- PRODUCT CATEGORY -->
+            <section class="product-main__category product-category">
+              <h3 class="product-main__heading">Categories</h3>
+              <ul class="product-category__list">
+                <li class="product-category__item category-product">
+                  <p class="category-product__name">Category name</p>
+                  <span class="category-product__value">320</span>
+                </li>
+                <li class="product-category__item category-product">
+                  <p class="category-product__name">Category name</p>
+                  <span class="category-product__value">112</span>
+                </li>
+                <li class="product-category__item category-product">
+                  <p class="category-product__name">Category name</p>
+                  <span class="category-product__value">32</span>
+                </li>
+                <li class="product-category__item category-product">
+                  <p class="category-product__name">Category name</p>
+                  <span class="category-product__value">48</span>
+                </li>
+              </ul>
+            </section>
 
-              <span class="filter-form__addition">12</span>
+            <!-- BRAND FILTERING -->
+            <section class="product-main__category brand-filter">
+              <h3 class="product-main__heading">Brands</h3>
 
-              <div class="filter-form__select-box">
-                <select class="filter-form__select" name="filter-form__select">
-                  <option selected disabled>Select</option>
-                  <option class="filter-form__select-option" value="Option-1">Select</option>
-                  <option class="filter-form__select-option" value="Option-2">Option-1</option>
-                  <option class="filter-form__select-option" value="Option-3">Option-2</option>
-                  <option class="filter-form__select-option" value="Option-4">Option-3</option>
-                </select>
+              <div class="brand-filter__box">
+                <label class="brand-filter__label">
+                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
+                  <span class="brand-filter__content">Filtre by brand item</span>
+                </label>
               </div>
-            </div>
+              <div class="brand-filter__box">
+                <label class="brand-filter__label">
+                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
+                  <span class="brand-filter__content">Filtre by brand item</span>
+                </label>
+              </div>
+              <div class="brand-filter__box">
+                <label class="brand-filter__label">
+                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
+                  <span class="brand-filter__content">Filtre by brand item</span>
+                </label>
+              </div>
+              <div class="brand-filter__box">
+                <label class="brand-filter__label">
+                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
+                  <span class="brand-filter__content">Filtre by brand item</span>
+                </label>
+              </div>
+            </section>
+
+            <!-- RATING FILTERING -->
+            <section class="product-main__category rating-filter">
+              <h3 class="product-main__heading">Rating</h3>
+
+              <div class="rating-filter__box">
+                <label class="rating-filter__label">
+                  <input class="rating-filter__input visually-hidden" name="rating-five" type="checkbox">
+                  <span class="rating-filter__content">
+                    <img class="rating-filter__img" src="img/rating-five.svg" alt="rating five" width="88" height="16">
+                  </span>
+                </label>
+              </div>
+
+              <div class="rating-filter__box">
+                <label class="rating-filter__label">
+                  <input class="rating-filter__input visually-hidden" name="rating-four" type="checkbox">
+                  <span class="rating-filter__content">
+                    <img class="rating-filter__img" src="img/rating-four.svg" alt="rating four" width="88" height="16">
+                  </span>
+                </label>
+              </div>
+
+              <div class="rating-filter__box">
+                <label class="rating-filter__label">
+                  <input class="rating-filter__input visually-hidden" name="rating-three" type="checkbox">
+                  <span class="rating-filter__content">
+                    <img class="rating-filter__img" src="img/rating-three.svg" alt="rating three" width="88"
+                      height="16">
+                  </span>
+                </label>
+              </div>
+
+              <div class="rating-filter__box">
+                <label class="rating-filter__label">
+                  <input class="rating-filter__input visually-hidden" name="rating-two" type="checkbox">
+                  <span class="rating-filter__content">
+                    <img class="rating-filter__img" src="img/rating-two.svg" alt="rating two" width="88" height="16">
+                  </span>
+                </label>
+              </div>
+
+              <div class="rating-filter__box">
+                <label class="rating-filter__label">
+                  <input class="rating-filter__input visually-hidden" name="rating-one" type="checkbox">
+                  <span class="rating-filter__content">
+                    <img class="rating-filter__img" src="img/rating-one.svg" alt="rating one" width="88" height="16">
+                  </span>
+                </label>
+              </div>
+
+            </section>
+
+            <!-- PRICE-FILTERING -->
+            <section class="product-main__category price-filter">
+              <h3 class="product-main__heading">Price</h3>
+
+              <div class="price-filter__range">
+                <img class="price-filter__range-img" src="img/price-range.svg" alt="price range interval" width="270" height="20">
+              </div>
+
+              <div class="price-filter__box">
+                <label class="price-filter__label">
+                  min
+                  <input class="price-filter__input" type="number" placeholder="0">
+                </label>
+
+                <label class="price-filter__label">
+                  max
+                  <input class="price-filter__input" type="number" placeholder="10000">
+                </label>
+              </div>
+
+              <div class="price-filter__box">
+                <button class="product-button product-button__apply" type="submit">Apply</button>
+                <button class="product-button product-button__reset" type="reset">Reset</button>
+              </div>
+            </section>
 
 
-          </div>
+          </section>
 
-          <div class="prodcut-filter__list-box">
-            <span class="product-filter__list-info">Applied filters:</span>
-            <ul class="prodcut-filter__list">
-              <li class="product-filter__item">Selected filter</li>
-              <li class="product-filter__item">Selected filter</li>
+          <!-- PRODUCT (outcome) LIST -->
+          <section class="outcomes">
+            <h2 class="visually-hidden">Outcome heading</h2>
+            <ul class="outcomes__list outcomes__list--list ">
+              <li class="outcomes__item">
+                <div class="outcome outcome--list">
+                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                  <span class="outcome-discount"></span>
+
+                  <div class="outcome__box">
+                    <!-- LEFT SIDE  -->
+                    <div class="outcome__content-box">
+                      <h3 class="outcome__content-heading">Product heading</h3>
+                      <p class="outcome__info">Space for a small product description</p>
+                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
+                      <dl>
+                        <div>
+                          <dt>Fresheness</dt>
+                          <dd>New (Extra fresh)</dd>
+                        </div>
+                        <div>
+                          <dt>Farm</dt>
+                          <dd>Grocery Tarm Fields</dd>
+                        </div>
+                        <div>
+                          <dt>Delivery</dt>
+                          <dd>Europe</dd>
+                        </div>
+                        <div>
+                          <dt>Stock</dt>
+                          <dd>320 pcs</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="outcome__price-box">
+                      <div class="outcome__price-box-inner">
+                        <span class="outcome__price-new-rate">36.99 USD</span>
+                        <span class="outcome__price-old-rate">48.56</span>
+                      </div>
+                      <div class="outcome__price-content">
+                        <span class="outcome__price-text">Free Shipping</span>
+                        <span class="outcome__price-info">Delivery in 1 day</span>
+                      </div>
+                      <div class="outcome__price-buttons">
+                        <button class="outcome__price-button-details">Product Detail</button>
+                        <button class="outcome__price-button-buy">Buy now</button>
+                        <button class="outcome__price-button-add">Add to wish list</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </li>
+
+              <li class="outcomes__item">
+                <div class="outcome outcome--list">
+                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                  <div class="outcome__box">
+                    <!-- LEFT SIDE  -->
+                    <div class="outcome__content-box">
+                      <h3 class="outcome__content-heading">Product heading</h3>
+                      <p class="outcome__info">Space for a small product description</p>
+                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
+                      <dl>
+                        <div>
+                          <dt>Fresheness</dt>
+                          <dd>New (Extra fresh)</dd>
+                        </div>
+                        <div>
+                          <dt>Farm</dt>
+                          <dd>Grocery Tarm Fields</dd>
+                        </div>
+                        <div>
+                          <dt>Delivery</dt>
+                          <dd>Europe</dd>
+                        </div>
+                        <div>
+                          <dt>Stock</dt>
+                          <dd>320 pcs</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="outcome__price-box">
+                      <div class="outcome__price-box-inner">
+                        <span class="outcome__price-new-rate">36.99 USD</span>
+                        <span class="outcome__price-old-rate">48.56</span>
+                      </div>
+                      <div class="outcome__price-content">
+                        <span class="outcome__price-text">Free Shipping</span>
+                        <span class="outcome__price-info">Delivery in 1 day</span>
+                      </div>
+                      <div class="outcome__price-buttons">
+                        <button class="outcome__price-button-details">Product Detail</button>
+                        <button class="outcome__price-button-buy">Buy now</button>
+                        <button class="outcome__price-button-add">Add to wish list</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </li>
+
+              <li class="outcomes__item">
+                <div class="outcome outcome--list">
+                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                  <div class="outcome__box">
+                    <!-- LEFT SIDE  -->
+                    <div class="outcome__content-box">
+                      <h3 class="outcome__content-heading">Product heading</h3>
+                      <p class="outcome__info">Space for a small product description</p>
+                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
+                      <dl>
+                        <div>
+                          <dt>Fresheness</dt>
+                          <dd>New (Extra fresh)</dd>
+                        </div>
+                        <div>
+                          <dt>Farm</dt>
+                          <dd>Grocery Tarm Fields</dd>
+                        </div>
+                        <div>
+                          <dt>Delivery</dt>
+                          <dd>Europe</dd>
+                        </div>
+                        <div>
+                          <dt>Stock</dt>
+                          <dd>320 pcs</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="outcome__price-box">
+                      <div class="outcome__price-box-inner">
+                        <span class="outcome__price-new-rate">36.99 USD</span>
+                        <span class="outcome__price-old-rate">48.56</span>
+                      </div>
+                      <div class="outcome__price-content">
+                        <span class="outcome__price-text">Free Shipping</span>
+                        <span class="outcome__price-info">Delivery in 1 day</span>
+                      </div>
+                      <div class="outcome__price-buttons">
+                        <button class="outcome__price-button-details">Product Detail</button>
+                        <button class="outcome__price-button-buy">Buy now</button>
+                        <button class="outcome__price-button-add">Add to wish list</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </li>
+
+              <li class="outcomes__item">
+                <div class="outcome outcome--list">
+                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                  <div class="outcome__box">
+                    <!-- LEFT SIDE  -->
+                    <div class="outcome__content-box">
+                      <h3 class="outcome__content-heading">Product heading</h3>
+                      <p class="outcome__info">Space for a small product description</p>
+                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
+                      <dl>
+                        <div>
+                          <dt>Fresheness</dt>
+                          <dd>New (Extra fresh)</dd>
+                        </div>
+                        <div>
+                          <dt>Farm</dt>
+                          <dd>Grocery Tarm Fields</dd>
+                        </div>
+                        <div>
+                          <dt>Delivery</dt>
+                          <dd>Europe</dd>
+                        </div>
+                        <div>
+                          <dt>Stock</dt>
+                          <dd>320 pcs</dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="outcome__price-box">
+                      <div class="outcome__price-box-inner">
+                        <span class="outcome__price-new-rate">36.99 USD</span>
+                        <span class="outcome__price-old-rate">48.56</span>
+                      </div>
+                      <div class="outcome__price-content">
+                        <span class="outcome__price-text">Free Shipping</span>
+                        <span class="outcome__price-info">Delivery in 1 day</span>
+                      </div>
+                      <div class="outcome__price-buttons">
+                        <button class="outcome__price-button-details">Product Detail</button>
+                        <button class="outcome__price-button-buy">Buy now</button>
+                        <button class="outcome__price-button-add">Add to wish list</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </li>
+
+
+
             </ul>
-          </div>
+          </section>
+        </div>
 
-        </form>
+
+      </form>
     </section>
 
   </main>

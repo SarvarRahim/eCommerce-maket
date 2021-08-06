@@ -1,0 +1,25 @@
+.product-main {
+
+  width: 270px;
+}
+
+.product-main__category{
+  margin-bottom: 48px;
+  width: 270px;
+}
+
+.product-main__heading{
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-primary;
+}
+
+
+@media only screen and (max-width : 1160px) {
+  .product-main{
+    width: 250px;
+  }
+}
