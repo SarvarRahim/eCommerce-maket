@@ -1,0 +1,22 @@
+.product-category{
+}
+
+
+
+.product-category__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-category__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-category__item:not(:last-child){
+  margin-bottom: 12px;
+
+}
+
