@@ -2549,6 +2549,186 @@ body {
   }
 }
 
+.site-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.page-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 16px 45px;
+}
+
+.page-pagination__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  margin-right: 8px;
+}
+
+.page-pagination__link:not(:last-child):after {
+  display: block;
+  content: "/";
+  margin-left: 8px;
+}
+
+.page-pagination__link--active {
+  color: #151515;
+}
+
+.farm-product {
+  padding: 16px 45px;
+}
+
+.farm-product__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.farm-product__sale-box {
+  position: relative;
+  z-index: 1;
+  margin-right: 32px;
+}
+
+.farm-product__img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+.farm-product__sale {
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  left: 2%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  padding: 4px 10px;
+  background: #F4F8EC;
+  border-radius: 12px;
+}
+
+.farm-product__sale:not(:last-child) {
+  margin-right: 12px;
+}
+
+.farm-product__sale--shop {
+  left: 13%;
+}
+
+.farm-product__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  color: #151515;
+  margin-bottom: 8px;
+}
+
+.farm-product__star-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.reting-form__group {
+  position: relative;
+  width: 125px;
+  height: 25px;
+  background-image: url("../../img/ic-actions-star.svg");
+  background-size: 25px auto;
+  background-repeat: repeat-x;
+}
+
+.reting-form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  background-size: 25px auto;
+  font-size: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.reting-form__input:checked,
+.reting-form__input:hover {
+  background-image: url("../../img/icon-star-on.svg");
+}
+
+.reting-form__input:hover ~ .reting-form__input {
+  background-image: url("../../img/ic-actions-star.svg");
+}
+
+.reting-form__group:focus-within {
+  outline: solid 2px #f3f337;
+}
+
+.reting-form__input:nth-of-type(1) {
+  z-index: 5;
+  width: 25px;
+}
+
+.reting-form__input:nth-of-type(2) {
+  z-index: 4;
+  width: 45px;
+}
+
+.reting-form__input:nth-of-type(3) {
+  z-index: 3;
+  width: 65px;
+}
+
+.reting-form__input:nth-of-type(4) {
+  z-index: 2;
+  width: 85px;
+}
+
+.reting-form__input:nth-of-type(5) {
+  z-index: 1;
+  width: 105px;
+}
+
+.reting-form__review {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  margin-left: 8px;
+}
+
+.reting-form__desc {
+  margin: 0;
+  font-size: 17px;
+  line-height: 23px;
+  color: #151515;
+}
+
+
 .product {
   padding: 0 45px;
 }

@@ -200,12 +200,19 @@
           <div class="farm-product__info">
             <h2 class="farm-product__title">Carrots from Tomissy Farm</h2>
 
-            <form class="reting-form" action="https://echo.htmlacademy.ru" method="GET">
-              <div class="reting-form__group">
-              <input class="reting-form__input visually-hidden" type="radio" name="reting" value="first-star">
-              <span class="reting-form__star"></span>
+            <div class="farm-product__star-wrapper">
+              <form class="reting-form" action="https://echo.htmlacademy.ru" method="GET">
+                <div class="reting-form__group">
+                <input class="reting-form__input" type="radio" name="reting" aria-label="Reting star" value="1">
+                <input class="reting-form__input" type="radio" name="reting" aria-label="Reting star" value="2">
+                <input class="reting-form__input" type="radio" name="reting" aria-label="Reting star" value="3">
+                <input class="reting-form__input" type="radio" name="reting" aria-label="Reting star" value="4">
+                <input class="reting-form__input" type="radio" name="reting" aria-label="Reting star" value="5" checked>
+           </div> 
+               </form>
+                <span class="reting-form__review">(1 customer review)</span>
             </div>
-            </form>
+            <p class="reting-form__desc">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
           </div>
         </div>
       </section>
