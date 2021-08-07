@@ -1,0 +1,48 @@
+.total {
+  margin-top: auto;
+}
+
+.total__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+}
+
+.total__price {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: $color-primary;
+  margin-top: 8px;
+}
+
+.total__shopping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 52px;
+  border-top: 1px solid #EBEBEB;
+  padding-top: 15px;
+}
+
+.total__shopping-continue {
+  margin: 0;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-primary;
+}
+
+.total__shopping-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  padding: 13px 16px;
+  background-color: $color-secondary;
+  border: 2px solid #46760A;border-radius: 12px;
+}

@@ -1,0 +1,116 @@
+.choosed-product {
+  display: flex;
+}
+
+.choosed-product__features {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.choosed-product__features-img {
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.choosed-product__features-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a1a1a1;
+  flex-grow: 1;
+  margin-right: auto;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url("../../img/ic-actions-heart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 6px;
+  }
+}
+
+.choosed-product__features-btn:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.choosed-product__features-btn--compare {
+  &::after {
+    background-image: url("../../img/Layer.svg");
+  }
+}
+
+.choosed-product__features-btn--remove {
+  &::after {
+    background-image: url("../../img/remov-ic.svg");
+  }
+}
+
+.choosed-product__content {
+  flex-grow: 1;
+}
+
+.choosed-product__content-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $color-primary;
+}
+
+.choosed-product__name {
+  display: flex;
+}
+
+.choosed-product__name-title {
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+  margin-right: 41px;
+}
+
+.choosed-product__name-desc {
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-primary;
+}
+
+/* PRODUCT SALE  */
+.choosed-product__sale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.choosed-product__price {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-secondary;
+}
+
+.choosed-product__rebate {
+  text-decoration: line-through;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.choosed-product__sale-wrap {
+  display: flex;
+  flex-direction: column;
+}
