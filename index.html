@@ -86,6 +86,8 @@
               </button>
             </li>
           </ul>
+
+
         </div>
 
         <!-- SITENAV -->
@@ -655,6 +657,81 @@
           <p class="copyright__text">Copyright © 2020 petrbilek.com</p>
         </div>
       </footer>
+
+      <div class="shopping-cart">
+        <div class="shopping-cart__head">
+          <h2 class="shopping-cart__title">Shopping cart</h2>
+          <button class="shopping-cart__btn" aria-label="button close" type="button">Close</button>
+        </div>
+        <div class="choosed-product">
+          <div class="choosed-product__features">
+            <img class="choosed-product__features-img" src="http://placehold.it/237x180?text=Product" alt="Product" width="100" height="67">
+            <button class="choosed-product__features-btn" aria-label="Wishlist" type="button">Wishlist</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--compare" aria-label="Compare" type="button">Compare</button>
+            <button class="choosed-product__features-btn choosed-product__features-btn--remove" aria-label="Remove" type="button">Remove</button>
+          </div>
+          <div class="choosed-product__content">
+            <h3 class="choosed-product__content-title">Poduct title</h3>
+            <dl>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Farm:</dt>
+                <dt class="choosed-product__name-desc">Tharamis Farm</dt>
+              </div>
+              <div class="choosed-product__name">
+                <dt class="choosed-product__name-title">Freshness:</dt>
+                <dt class="choosed-product__name-desc">1 day old</dt>
+              </div>
+            </dl>
+            <div class="star-box">
+              <div class="outcome__star-box-inner">
+
+                <div class="outcome__star-empty-box">
+                  <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                </div>
+                <div class="outcome__star-full-box">
+                  <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                  <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                </div>
+              </div>
+            </div>
+
+            <div class="choosed-product__sale">
+              <div class="choosed-product__sale-wrap">
+              <span class="choosed-product__price">36.99 USD</span>
+              <span class="choosed-product__rebate">48.56 USD</span>
+            </div>
+              <form class="select-form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="select-form__group">
+                  <span class="select-from__chosen">1 pcs</span>
+                  <select class="select-form__select" name="products" aria-label="Choosen product">
+                    <option value="test">Pcs</option>
+                    <option value="test1">Test2</option>
+                    <option value="test2">Test3</option>
+                    <option value="test3">Test4</option>
+                    <option value="test4">Test5</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+        </div>
+        </div>
+
+        <div class="total">
+          <h3 class="total__title">Subtotal</h3>
+          <span class="total__price">73.98 USD</span>
+          <div class="total__shopping">
+            <p class="total__shopping-continue">Continue shopping</p>
+            <a class="total__shopping-link" href="category.html">Go to Chekout</a>
+          </div>
+        </div>
+      </div>
     </div>
 
 

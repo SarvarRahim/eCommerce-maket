@@ -1,0 +1,40 @@
+.outcome__star-box {
+  margin-bottom: 25px;
+}
+
+.outcome__star-box-inner{
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+}
+
+.outcome__star-empty-box, .outcome__star-full-box {
+  display: flex;
+}
+
+.outcome__star-empty:not(:last-child), .outcome__star-full:not(:last-child) {
+  margin-right: 4px;
+}
+
+
+.outcome__star-full-box {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 82%;;
+}
+
+.outcome--grid dl{
+  display: none;
+}
+
+.outcome--grid .outcome__price-button-add{
+  display: none;
+}
+
+.outcome--grid .outcome__price-box{
+  display: flex;
+
+}
