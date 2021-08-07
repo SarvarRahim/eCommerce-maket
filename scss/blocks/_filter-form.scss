@@ -1,8 +1,10 @@
 .filter-form{
   display: flex;
   width: 100%;
+  margin-bottom: -20px;
 }
 .filter-form__box {
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   padding: 9px 16px;
@@ -127,7 +129,5 @@
     flex-wrap: wrap;
   }
 
-  .filter-form__box:not(:last-child){
-    margin-bottom: 20px;
-  }
+
 }
