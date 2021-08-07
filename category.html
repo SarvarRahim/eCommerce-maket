@@ -6,798 +6,893 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
-<div class="container">
-  <header class="site-header ">
-    <div class="site-header__top header-top">
-      <div class="header-top__left">
-        <a class="header-top__chat" href="#">Chat with us</a>
-        <a class="header-top__phone" href="tel:+420336775664">+420 336 775 664</a>
-        <a class="header-top__email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
-      </div>
-      <ul class="header-top__right">
-        <li class="header-top__right-item">
-          <a href="#" class="header-top__right-item-link">Blog</a>
-        </li>
-        <li class="header-top__right-item">
-          <a href="#" class="header-top__right-item-link">About Us</a>
-        </li>
-        <li class="header-top__right-item">
-          <a href="#" class="header-top__right-item-link">Careers</a>
-        </li>
-      </ul>
-    </div>
-
-    <!--     MIDLLE   -->
-    <div class="site-header__middle">
-      <a class="site-header__middle-link" href="index.html">
-        <img class="site-header__middle-img" src="img/site-logo.svg" alt="logo site" width="177" height="50">
-      </a>
-
-      <form class="site-header__form form-search" action="https://echo.htmlacademy.ru" method="GET">
-        <div class="form-search__wrapper">
-          <select class="form-search__select" name="categories" aria-label="Category">
-            <option value="All">All categories</option>
-            <option value="Bakery">Bakery</option>
-            <option value="Fruit and vegetables">Fruit and vegetables</option>
-            <option value="Meat and fish">Meat and fish</option>
-            <option value="Drinks">Drinks</option>
-            <option value="Kitchen">Kitchen</option>
-          </select>
+  <div class="container">
+    <header class="site-header ">
+      <div class="site-header__top header-top">
+        <div class="header-top__left">
+          <a class="header-top__chat" href="#">Chat with us</a>
+          <a class="header-top__phone" href="tel:+420336775664">+420 336 775 664</a>
+          <a class="header-top__email" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
         </div>
-        <input class="form-search__input" type="search" name="search" aria-label="search"
-        placeholder="Search Products, categories ...">
-      </form>
+        <ul class="header-top__right">
+          <li class="header-top__right-item">
+            <a href="#" class="header-top__right-item-link">Blog</a>
+          </li>
+          <li class="header-top__right-item">
+            <a href="#" class="header-top__right-item-link">About Us</a>
+          </li>
+          <li class="header-top__right-item">
+            <a href="#" class="header-top__right-item-link">Careers</a>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="site-header__account">
-        <li class="site-header__account-item">
-          <button class="site-header__account-link js-site-header__account--link">
-            <svg class="site-header__account-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
-              <path d="M0 0h24v24H0V0z" fill="none"></path>
-              <path
-              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-            </path>
-          </svg>
-        </button>
-      </li>
-      <li class="site-header__account-item">
-        <button class="site-header__account-btn">
-          <svg class="site-header__account-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L21 22" stroke="#151515" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M12 11.98a5 5 0 100-10 5 5 0 000 10z" stroke="#151515" stroke-width="2.5" stroke-linecap="round"
-            stroke-linejoin="bevel" /></svg>
+      <!--     MIDLLE   -->
+      <div class="site-header__middle">
+        <a class="site-header__middle-link" href="index.html">
+          <img class="site-header__middle-img" src="img/site-logo.svg" alt="logo site" width="177" height="50">
+        </a>
+
+        <form class="site-header__form form-search" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="form-search__wrapper">
+            <select class="form-search__select" name="categories" aria-label="Category">
+              <option value="All">All categories</option>
+              <option value="Bakery">Bakery</option>
+              <option value="Fruit and vegetables">Fruit and vegetables</option>
+              <option value="Meat and fish">Meat and fish</option>
+              <option value="Drinks">Drinks</option>
+              <option value="Kitchen">Kitchen</option>
+            </select>
+          </div>
+          <input class="form-search__input" type="search" name="search" aria-label="search"
+          placeholder="Search Products, categories ...">
+        </form>
+
+        <ul class="site-header__account">
+          <li class="site-header__account-item">
+            <button class="site-header__account-link js-site-header__account--link">
+              <svg class="site-header__account-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
+                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+              </path>
+            </svg>
           </button>
         </li>
         <li class="site-header__account-item">
-          <button  class="site-header__account-btn">
+          <button class="site-header__account-btn">
             <svg class="site-header__account-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-              d="M17.89 20.85H6.11a1.42 1.42 0 01-1.38-1.08L2.08 9.16a.7.7 0 01.68-.87h18.48a.7.7 0 01.68.87l-2.65 10.61a1.42 1.42 0 01-1.38 1.08v0zM9.8 3.15L6.9 8.29M13.88 3.15l2.91 5.14"
-              stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
-              <span class="site-header__account-count">4</span>
+              <path d="M3 22l.79-2.88c2.61-9.5 13.81-9.5 16.42 0L21 22" stroke="#151515" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 11.98a5 5 0 100-10 5 5 0 000 10z" stroke="#151515" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="bevel" /></svg>
             </button>
           </li>
           <li class="site-header__account-item">
-            <button  class="site-header__account-burger js-site-header__account--btn">
-              <svg width="23" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" stroke-linecap="round" d="M22 1H1M22 9H1M22 17H1"/></svg>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-      <!-- SITENAV -->
-      <div class="site-header__sitenav-box">
-        <nav class="site-header__sitenav-box-open sitenav">
-          <img class="sitenav__icon-close js-sitenav__icon-close" src="img/icon-close.svg" alt="Icon for close" width="20" height="20">
-          <div class="sitenav-transform">
-            <ul class="sitenav__list">
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Bakery</a>
-                <ul class="sitenav__dropdown-list">
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Bread</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Special bread</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Premium bread</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Fruit and vegetables</a>
-                <ul class="sitenav__dropdown-list">
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Tomato</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Potato</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Onion</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Meat and fish</a>
-                <ul class="sitenav__dropdown-list">
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Beef</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Fish</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Lasos</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Drinks</a>
-                <ul class="sitenav__dropdown-list">
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Coca Cola</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Pepsi</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Fanta</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Kitchen</a>
-                <ul class="sitenav__dropdown-list">
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Hot-dog</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Burger</a>
-                  </li>
-                  <li class="sitenav__dropdown-item">
-                    <a class="sitenav__dropdown__link" href="#">Kazan Kebab</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Special nutrition</a>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Baby</a>
-              </li>
-              <li class="sitenav__item">
-                <a class="sitenav__link" href="#">Pharmacy</a>
-              </li>
-            </ul>
-        </div>
-      </nav>
-      </div>
-
-  </header>
-
-  <main class="site-content">
-    <!-- PRODUCT -->
-    <section class="product product-grid">
-      <div class="product-top">
-        <span class="product-top__wrapper">
-          <span class="product-top__page">Homepage /</span>
-          <span class="product-top__type">Fruit and vegetables</span>
-        </span>
-      </div>
-
-      <header class="product-header">
-        <div class="product-header__start">
-          <h3 class="product-header__heading">Fruit and vegetables</h3>
-          <div class="product-header__boxes">
-            <button class="product-header__button product-header__grid-view">Grid view</button>
-            <button class="product-header__button list-view product-header__list-view">List view</button>
-            <span class="product-header__product-list product-header-view">Products</span>
-          </div>
-        </div>
-      </header>
-
-      <form action="https://echo.htmlacademy.ru" method="POST" class="product-form">
-
-        <!-- TOP FILTER  -->
-        <div class="product-filter filter-form">
-
-          <!-- FILTER RADIO GROUP -->
-          <div class="filter-form__box">
-            <label class="filter-form__label">
-              <input class="filter-form__input visually-hidden filter-form__input-radio" type="radio" name="filter-text"
-                value="filter-radio-2">
-              <span class="filter-form__content filter-form__radio-content">Filter text</span>
-            </label>
-            <label class="filter-form__label">
-              <input class="filter-form__input filter-form__input-radio visually-hidden" type="radio" name="filter-text"
-                value="filter-radio-2">
-              <span class="filter-form__content filter-form__radio-content">Filter text</span>
-            </label>
-          </div>
-
-
-          <!-- CHECKBOX FILTER -->
-          <div class="filter-form__box">
-            <label class="filter-form__label filter-form__label-checkbox">
-              <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
-                name="filter-check-box-1">
-              <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
-            </label>
-
-            <span class="filter-form__addition">Nbm</span>
-          </div>
-
-          <!-- CHECKBOX FILTER -->
-          <div class="filter-form__box">
-            <label class="filter-form__label filter-form__label-checkbox">
-              <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
-                name="filter-check-box-1">
-              <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
-            </label>
-
-            <span class="filter-form__addition">Nbm</span>
-          </div>
-
-          <!-- CHECKBOX FILTER -->
-          <div class="filter-form__box">
-            <label class="filter-form__label filter-form__label-checkbox">
-              <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
-                name="filter-check-box-1">
-              <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
-            </label>
-
-            <span class="filter-form__addition">12</span>
-
-            <div class="filter-form__select-box">
-              <select class="filter-form__select" name="filter-form__select">
-                <option selected disabled>Select</option>
-                <option class="filter-form__select-option" value="Option-1">Select</option>
-                <option class="filter-form__select-option" value="Option-2">Option-1</option>
-                <option class="filter-form__select-option" value="Option-3">Option-2</option>
-                <option class="filter-form__select-option" value="Option-4">Option-3</option>
-              </select>
-            </div>
-          </div>
-
-
-        </div>
-
-        <!-- FILLTERS LIST -->
-        <div class="prodcut-filter__list-box">
-          <span class="product-filter__list-info">Applied filters:</span>
-          <ul class="prodcut-filter__list">
-            <li class="product-filter__item">Selected filter</li>
-            <li class="product-filter__item">Selected filter</li>
+            <button  class="site-header__account-btn">
+              <svg class="site-header__account-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M17.89 20.85H6.11a1.42 1.42 0 01-1.38-1.08L2.08 9.16a.7.7 0 01.68-.87h18.48a.7.7 0 01.68.87l-2.65 10.61a1.42 1.42 0 01-1.38 1.08v0zM9.8 3.15L6.9 8.29M13.88 3.15l2.91 5.14"
+                stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                <span class="site-header__account-count">4</span>
+              </button>
+            </li>
+            <li class="site-header__account-item">
+              <button  class="site-header__account-burger js-site-header__account--btn">
+                <svg width="23" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" stroke-linecap="round" d="M22 1H1M22 9H1M22 17H1"/></svg>
+              </button>
+            </li>
           </ul>
         </div>
 
-        <div class="product-wrapper ">
-
-          <!-- CATEGORY FILTER AND PRODUCT -->
-          <section class="product-main">
-            <h2 class="visually-hidden">Product main</h2>
-
-            <!-- PRODUCT CATEGORY -->
-            <section class="product-main__category product-category">
-              <h3 class="product-main__heading">Categories</h3>
-              <ul class="product-category__list">
-                <li class="product-category__item category-product">
-                  <p class="category-product__name">Category name</p>
-                  <span class="category-product__value">320</span>
+        <!-- SITENAV -->
+        <div class="site-header__sitenav-box">
+          <nav class="site-header__sitenav-box-open sitenav">
+            <img class="sitenav__icon-close js-sitenav__icon-close" src="img/icon-close.svg" alt="Icon for close" width="20" height="20">
+            <div class="sitenav-transform">
+              <ul class="sitenav__list">
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Bakery</a>
+                  <ul class="sitenav__dropdown-list">
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Bread</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Special bread</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Premium bread</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="product-category__item category-product">
-                  <p class="category-product__name">Category name</p>
-                  <span class="category-product__value">112</span>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Fruit and vegetables</a>
+                  <ul class="sitenav__dropdown-list">
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Tomato</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Potato</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Onion</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="product-category__item category-product">
-                  <p class="category-product__name">Category name</p>
-                  <span class="category-product__value">32</span>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Meat and fish</a>
+                  <ul class="sitenav__dropdown-list">
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Beef</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Fish</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Lasos</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="product-category__item category-product">
-                  <p class="category-product__name">Category name</p>
-                  <span class="category-product__value">48</span>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Drinks</a>
+                  <ul class="sitenav__dropdown-list">
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Coca Cola</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Pepsi</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Fanta</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Kitchen</a>
+                  <ul class="sitenav__dropdown-list">
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Hot-dog</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Burger</a>
+                    </li>
+                    <li class="sitenav__dropdown-item">
+                      <a class="sitenav__dropdown__link" href="#">Kazan Kebab</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Special nutrition</a>
+                </li>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Baby</a>
+                </li>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="#">Pharmacy</a>
                 </li>
               </ul>
-            </section>
+            </div>
+          </nav>
+        </div>
 
-            <!-- BRAND FILTERING -->
-            <section class="product-main__category brand-filter">
-              <h3 class="product-main__heading">Brands</h3>
+      </header>
 
-              <div class="brand-filter__box">
-                <label class="brand-filter__label">
-                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
-                  <span class="brand-filter__content">Filtre by brand item</span>
-                </label>
-              </div>
-              <div class="brand-filter__box">
-                <label class="brand-filter__label">
-                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
-                  <span class="brand-filter__content">Filtre by brand item</span>
-                </label>
-              </div>
-              <div class="brand-filter__box">
-                <label class="brand-filter__label">
-                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
-                  <span class="brand-filter__content">Filtre by brand item</span>
-                </label>
-              </div>
-              <div class="brand-filter__box">
-                <label class="brand-filter__label">
-                  <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
-                  <span class="brand-filter__content">Filtre by brand item</span>
-                </label>
-              </div>
-            </section>
+      <main class="site-content">
+        <!-- PRODUCT -->
+        <section class="product product-grid">
+          <div class="product-top">
+            <span class="product-top__wrapper">
+              <span class="product-top__page">Homepage /</span>
+              <span class="product-top__type">Fruit and vegetables</span>
+            </span>
+          </div>
 
-            <!-- RATING FILTERING -->
-            <section class="product-main__category rating-filter">
-              <h3 class="product-main__heading">Rating</h3>
-
-              <div class="rating-filter__box">
-                <label class="rating-filter__label">
-                  <input class="rating-filter__input visually-hidden" name="rating-five" type="checkbox">
-                  <span class="rating-filter__content">
-                    <img class="rating-filter__img" src="img/rating-five.svg" alt="rating five" width="88" height="16">
-                  </span>
-                </label>
+          <header class="product-header product-active">
+            <div class="product-header__start">
+              <h3 class="product-header__heading">Fruit and vegetables</h3>
+              <div class="product-header__boxes product-header__boxes--list ">
+                <button class="product-header__button product-header__grid-view">Grid
+                  view</button>
+                <button class="product-header__button list-view product-header__list-view">List view</button>
+                <span class="product-header__product-list product-header-view">Products</span>
               </div>
+            </div>
+          </header>
 
-              <div class="rating-filter__box">
-                <label class="rating-filter__label">
-                  <input class="rating-filter__input visually-hidden" name="rating-four" type="checkbox">
-                  <span class="rating-filter__content">
-                    <img class="rating-filter__img" src="img/rating-four.svg" alt="rating four" width="88" height="16">
-                  </span>
+          <form action="https://echo.htmlacademy.ru" method="POST" class="product-form">
+
+            <!-- TOP FILTER  -->
+            <div class="product-filter filter-form">
+
+              <!-- FILTER RADIO GROUP -->
+              <div class="filter-form__box">
+                <label class="filter-form__label">
+                  <input class="filter-form__input visually-hidden filter-form__input-radio" type="radio" name="filter-text"
+                  value="filter-radio-2">
+                  <span class="filter-form__content filter-form__radio-content">Filter text</span>
+                </label>
+                <label class="filter-form__label">
+                  <input class="filter-form__input filter-form__input-radio visually-hidden" type="radio" name="filter-text"
+                  value="filter-radio-2">
+                  <span class="filter-form__content filter-form__radio-content">Filter text</span>
                 </label>
               </div>
 
-              <div class="rating-filter__box">
-                <label class="rating-filter__label">
-                  <input class="rating-filter__input visually-hidden" name="rating-three" type="checkbox">
-                  <span class="rating-filter__content">
-                    <img class="rating-filter__img" src="img/rating-three.svg" alt="rating three" width="88"
-                      height="16">
-                  </span>
-                </label>
-              </div>
 
-              <div class="rating-filter__box">
-                <label class="rating-filter__label">
-                  <input class="rating-filter__input visually-hidden" name="rating-two" type="checkbox">
-                  <span class="rating-filter__content">
-                    <img class="rating-filter__img" src="img/rating-two.svg" alt="rating two" width="88" height="16">
-                  </span>
-                </label>
-              </div>
-
-              <div class="rating-filter__box">
-                <label class="rating-filter__label">
-                  <input class="rating-filter__input visually-hidden" name="rating-one" type="checkbox">
-                  <span class="rating-filter__content">
-                    <img class="rating-filter__img" src="img/rating-one.svg" alt="rating one" width="88" height="16">
-                  </span>
-                </label>
-              </div>
-
-            </section>
-
-            <!-- PRICE-FILTERING -->
-            <section class="product-main__category price-filter">
-              <h3 class="product-main__heading">Price</h3>
-
-              <div class="price-filter__range">
-                <img class="price-filter__range-img" src="img/price-range.svg" alt="price range interval" width="270" height="20">
-              </div>
-
-              <div class="price-filter__box">
-                <label class="price-filter__label">
-                  min
-                  <input class="price-filter__input" type="number" placeholder="0">
+              <!-- CHECKBOX FILTER -->
+              <div class="filter-form__box">
+                <label class="filter-form__label filter-form__label-checkbox">
+                  <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
+                  name="filter-check-box-1">
+                  <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
                 </label>
 
-                <label class="price-filter__label">
-                  max
-                  <input class="price-filter__input" type="number" placeholder="10000">
+                <span class="filter-form__addition">Nbm</span>
+              </div>
+
+              <!-- CHECKBOX FILTER -->
+              <div class="filter-form__box filter-form__box--third">
+                <label class="filter-form__label filter-form__label-checkbox">
+                  <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
+                  name="filter-check-box-1">
+                  <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
                 </label>
+
+                <span class="filter-form__addition">Nbm</span>
               </div>
 
-              <div class="price-filter__box">
-                <button class="product-button product-button__apply" type="submit">Apply</button>
-                <button class="product-button product-button__reset" type="reset">Reset</button>
+              <!-- CHECKBOX FILTER -->
+              <div class="filter-form__box">
+                <label class="filter-form__label filter-form__label-checkbox">
+                  <input class="filter-form__input filter-form__input-checkbox visually-hidden" type="checkbox"
+                  name="filter-check-box-1">
+                  <span class="filter-form__content filter-form__checkbox-content">Filtre</span>
+                </label>
+
+                <span class="filter-form__addition">12</span>
+
+                <div class="filter-form__select-box">
+                  <select class="filter-form__select" name="filter-form__select">
+                    <option selected disabled>Select</option>
+                    <option class="filter-form__select-option" value="Option-1">Select</option>
+                    <option class="filter-form__select-option" value="Option-2">Option-1</option>
+                    <option class="filter-form__select-option" value="Option-3">Option-2</option>
+                    <option class="filter-form__select-option" value="Option-4">Option-3</option>
+                  </select>
+                </div>
               </div>
-            </section>
 
 
+            </div>
+
+            <!-- FILLTERS LIST -->
+            <div class="prodcut-filter__list-box">
+              <div class="prodcut-filter__list-box-inner">
+                <span class="product-filter__list-info">Applied filters:</span>
+                <ul class="prodcut-filter__list">
+                  <li class="product-filter__item">Selected filter</li>
+                  <li class="product-filter__item">Selected filter</li>
+                </ul>
+              </div>
+
+              <img class="product-filter__button" src="img/icon-filter.svg" alt="icon filter">
+
+            </div>
+
+            <div class="product-wrapper ">
+
+              <!-- CATEGORY FILTER AND PRODUCT -->
+              <div class="product-open-filter-inner">
+                <section class="product-main">
+                  <h2 class="visually-hidden">Product main</h2>
+                  <!-- PRODUCT CATEGORY -->
+                  <section class="product-main__category product-category">
+                    <h3 class="product-main__heading">Categories</h3>
+                    <ul class="product-category__list">
+                      <li class="product-category__item category-product">
+                        <p class="category-product__name">Category name</p>
+                        <span class="category-product__value">320</span>
+                      </li>
+                      <li class="product-category__item category-product">
+                        <p class="category-product__name">Category name</p>
+                        <span class="category-product__value">112</span>
+                      </li>
+                      <li class="product-category__item category-product">
+                        <p class="category-product__name">Category name</p>
+                        <span class="category-product__value">32</span>
+                      </li>
+                      <li class="product-category__item category-product">
+                        <p class="category-product__name">Category name</p>
+                        <span class="category-product__value">48</span>
+                      </li>
+                    </ul>
+                  </section>
+                  <!-- BRAND FILTERING -->
+                  <section class="product-main__category brand-filter">
+                    <h3 class="product-main__heading">Brands</h3>
+                    <div class="brand-filter__box">
+                      <label class="brand-filter__label">
+                        <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-1">
+                        <span class="brand-filter__content">Filtre by brand item</span>
+                      </label>
+                    </div>
+                    <div class="brand-filter__box">
+                      <label class="brand-filter__label">
+                        <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-2">
+                        <span class="brand-filter__content">Filtre by brand item</span>
+                      </label>
+                    </div>
+                    <div class="brand-filter__box">
+                      <label class="brand-filter__label">
+                        <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-3">
+                        <span class="brand-filter__content">Filtre by brand item</span>
+                      </label>
+                    </div>
+                    <div class="brand-filter__box">
+                      <label class="brand-filter__label">
+                        <input class="brand-filter__checkbox visually-hidden checkbox-custom" type="checkbox" name="brand-4">
+                        <span class="brand-filter__content">Filtre by brand item</span>
+                      </label>
+                    </div>
+                  </section>
+                  <!-- RATING FILTERING -->
+                  <section class="product-main__category rating-filter">
+                    <h3 class="product-main__heading">Rating</h3>
+                    <div class="rating-filter__box">
+                      <label class="rating-filter__label">
+                        <input class="rating-filter__input visually-hidden" name="rating-five" type="checkbox">
+                        <span class="rating-filter__content">
+                          <img class="rating-filter__img" src="img/rating-five.svg" alt="rating five" width="88" height="16">
+                        </span>
+                      </label>
+                    </div>
+                    <div class="rating-filter__box">
+                      <label class="rating-filter__label">
+                        <input class="rating-filter__input visually-hidden" name="rating-four" type="checkbox">
+                        <span class="rating-filter__content">
+                          <img class="rating-filter__img" src="img/rating-four.svg" alt="rating four" width="88" height="16">
+                        </span>
+                      </label>
+                    </div>
+                    <div class="rating-filter__box">
+                      <label class="rating-filter__label">
+                        <input class="rating-filter__input visually-hidden" name="rating-three" type="checkbox">
+                        <span class="rating-filter__content">
+                          <img class="rating-filter__img" src="img/rating-three.svg" alt="rating three" width="88"
+                          height="16">
+                        </span>
+                      </label>
+                    </div>
+                    <div class="rating-filter__box">
+                      <label class="rating-filter__label">
+                        <input class="rating-filter__input visually-hidden" name="rating-two" type="checkbox">
+                        <span class="rating-filter__content">
+                          <img class="rating-filter__img" src="img/rating-two.svg" alt="rating two" width="88" height="16">
+                        </span>
+                      </label>
+                    </div>
+                    <div class="rating-filter__box">
+                      <label class="rating-filter__label">
+                        <input class="rating-filter__input visually-hidden" name="rating-one" type="checkbox">
+                        <span class="rating-filter__content">
+                          <img class="rating-filter__img" src="img/rating-one.svg" alt="rating one" width="88" height="16">
+                        </span>
+                      </label>
+                    </div>
+                  </section>
+                  <!-- PRICE-FILTERING -->
+                  <section class="product-main__category price-filter">
+                    <h3 class="product-main__heading">Price</h3>
+                    <div class="price-filter__range">
+                      <img class="price-filter__range-img" src="img/price-range.svg" alt="price range interval" width="270" height="20">
+                    </div>
+                    <div class="price-filter__box">
+                      <label class="price-filter__label">
+                        min
+                        <input class="price-filter__input" type="number" placeholder="0">
+                      </label>
+                      <label class="price-filter__label">
+                        max
+                        <input class="price-filter__input" type="number" placeholder="10000">
+                      </label>
+                    </div>
+                    <div class="price-filter__box">
+                      <button class="product-button product-button__apply" type="submit">Apply</button>
+                      <button class="product-button product-button__reset" type="reset">Reset</button>
+                    </div>
+                  </section>
+                </section>
+              </div>
+
+              <!-- PRODUCT (outcome) LIST -->
+              <section class="outcomes">
+                <h2 class="visually-hidden">Outcome heading</h2>
+                <ul class="outcomes__list outcomes__list--list ">
+                  <li class="outcomes__item">
+                    <div class="outcome outcome--list">
+                      <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                      <div class="outcome__box">
+                        <!-- LEFT SIDE  -->
+                        <div class="outcome__content-box">
+                          <h3 class="outcome__content-heading">Product heading</h3>
+                          <p class="outcome__info">Space for a small product description</p>
+                          <div class="outcome__star-box">
+                            <div class="outcome__star-box-inner">
+
+                              <div class="outcome__star-empty-box">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                              </div>
+                              <div class="outcome__star-full-box">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star"> -->
+                          <dl>
+                            <div>
+                              <dt>Fresheness</dt>
+                              <dd>New (Extra fresh)</dd>
+                            </div>
+                            <div>
+                              <dt>Farm</dt>
+                              <dd>Grocery Tarm Fields</dd>
+                            </div>
+                            <div>
+                              <dt>Delivery</dt>
+                              <dd>Europe</dd>
+                            </div>
+                            <div>
+                              <dt>Stock</dt>
+                              <dd>320 pcs</dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <!-- RIGHT SIDE -->
+                        <div class="outcome__price-box">
+                          <div class="outcome__price-box-inner">
+                            <span class="outcome__price-new-rate">36.99 USD</span>
+                            <span class="outcome__price-old-rate">48.56</span>
+                          </div>
+                          <div class="outcome__price-content">
+                            <span class="outcome__price-text">Free Shipping</span>
+                            <span class="outcome__price-info">Delivery in 1 day</span>
+                          </div>
+                          <div class="outcome__price-buttons">
+                            <button class="outcome__price-button-details">Product Detail</button>
+                            <button class="outcome__price-button-buy">Buy now</button>
+                            <button class="outcome__price-button-add">Add to wish list</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </li>
+
+                  <li class="outcomes__item">
+                    <div class="outcome outcome--list">
+                      <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                      <div class="outcome__box">
+                        <!-- LEFT SIDE  -->
+                        <div class="outcome__content-box">
+                          <h3 class="outcome__content-heading">Product heading</h3>
+                          <p class="outcome__info">Space for a small product description</p>
+                          <div class="outcome__star-box">
+                            <div class="outcome__star-box-inner">
+
+                              <div class="outcome__star-empty-box">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                              </div>
+                              <div class="outcome__star-full-box">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star"> -->
+                          <dl>
+                            <div>
+                              <dt>Fresheness</dt>
+                              <dd>New (Extra fresh)</dd>
+                            </div>
+                            <div>
+                              <dt>Farm</dt>
+                              <dd>Grocery Tarm Fields</dd>
+                            </div>
+                            <div>
+                              <dt>Delivery</dt>
+                              <dd>Europe</dd>
+                            </div>
+                            <div>
+                              <dt>Stock</dt>
+                              <dd>320 pcs</dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <!-- RIGHT SIDE -->
+                        <div class="outcome__price-box">
+                          <div class="outcome__price-box-inner">
+                            <span class="outcome__price-new-rate">36.99 USD</span>
+                            <span class="outcome__price-old-rate">48.56</span>
+                          </div>
+                          <div class="outcome__price-content">
+                            <span class="outcome__price-text">Free Shipping</span>
+                            <span class="outcome__price-info">Delivery in 1 day</span>
+                          </div>
+                          <div class="outcome__price-buttons">
+                            <button class="outcome__price-button-details">Product Detail</button>
+                            <button class="outcome__price-button-buy">Buy now</button>
+                            <button class="outcome__price-button-add">Add to wish list</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </li>
+
+                  <li class="outcomes__item">
+                    <div class="outcome outcome--list">
+                      <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                      <div class="outcome__box">
+                        <!-- LEFT SIDE  -->
+                        <div class="outcome__content-box">
+                          <h3 class="outcome__content-heading">Product heading</h3>
+                          <p class="outcome__info">Space for a small product description</p>
+                          <div class="outcome__star-box">
+                            <div class="outcome__star-box-inner">
+
+                              <div class="outcome__star-empty-box">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                              </div>
+                              <div class="outcome__star-full-box">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star"> -->
+                          <dl>
+                            <div>
+                              <dt>Fresheness</dt>
+                              <dd>New (Extra fresh)</dd>
+                            </div>
+                            <div>
+                              <dt>Farm</dt>
+                              <dd>Grocery Tarm Fields</dd>
+                            </div>
+                            <div>
+                              <dt>Delivery</dt>
+                              <dd>Europe</dd>
+                            </div>
+                            <div>
+                              <dt>Stock</dt>
+                              <dd>320 pcs</dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <!-- RIGHT SIDE -->
+                        <div class="outcome__price-box">
+                          <div class="outcome__price-box-inner">
+                            <span class="outcome__price-new-rate">36.99 USD</span>
+                            <span class="outcome__price-old-rate">48.56</span>
+                          </div>
+                          <div class="outcome__price-content">
+                            <span class="outcome__price-text">Free Shipping</span>
+                            <span class="outcome__price-info">Delivery in 1 day</span>
+                          </div>
+                          <div class="outcome__price-buttons">
+                            <button class="outcome__price-button-details">Product Detail</button>
+                            <button class="outcome__price-button-buy">Buy now</button>
+                            <button class="outcome__price-button-add">Add to wish list</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </li>
+
+                  <li class="outcomes__item">
+                    <div class="outcome outcome--list">
+                      <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
+
+                      <div class="outcome__box">
+                        <!-- LEFT SIDE  -->
+                        <div class="outcome__content-box">
+                          <h3 class="outcome__content-heading">Product heading</h3>
+                          <p class="outcome__info">Space for a small product description</p>
+                          <div class="outcome__star-box">
+                            <div class="outcome__star-box-inner">
+
+                              <div class="outcome__star-empty-box">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-empty" src="img/empty-star.svg" alt="" width="16" height="16">
+                              </div>
+                              <div class="outcome__star-full-box">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                                <img class="outcome__star-full" src="img/full-star.svg" alt="" width="16" height="16">
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star"> -->
+                          <dl>
+                            <div>
+                              <dt>Fresheness</dt>
+                              <dd>New (Extra fresh)</dd>
+                            </div>
+                            <div>
+                              <dt>Farm</dt>
+                              <dd>Grocery Tarm Fields</dd>
+                            </div>
+                            <div>
+                              <dt>Delivery</dt>
+                              <dd>Europe</dd>
+                            </div>
+                            <div>
+                              <dt>Stock</dt>
+                              <dd>320 pcs</dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <!-- RIGHT SIDE -->
+                        <div class="outcome__price-box">
+                          <div class="outcome__price-box-inner">
+                            <span class="outcome__price-new-rate">36.99 USD</span>
+                            <span class="outcome__price-old-rate">48.56</span>
+                          </div>
+                          <div class="outcome__price-content">
+                            <span class="outcome__price-text">Free Shipping</span>
+                            <span class="outcome__price-info">Delivery in 1 day</span>
+                          </div>
+                          <div class="outcome__price-buttons">
+                            <button class="outcome__price-button-details">Product Detail</button>
+                            <button class="outcome__price-button-buy">Buy now</button>
+                            <button class="outcome__price-button-add">Add to wish list</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </li>
+
+
+
+                </ul>
+              </section>
+            </div>
+
+          <footer class="product__footer">
+            <div class="product__footer-page ">
+              <span>Page:</span>
+              <ul class="product__footer-list">
+                <li class="product__footer-item">
+                  <a class="product__footer-link" href="#">1</a>
+                </li>
+                <li class="product__footer-item">
+                  <a class="product__footer-link" href="#">2</a>
+                </li>
+                <li class="product__footer-item">
+                  <a class="product__footer-link product__footer-link--active" href="#">3</a>
+                </li>
+                <li class="product__footer-item">
+                  <a class="product__footer-link" href="#">4</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product__footer-inner">
+              <button class="product__footer-show-product" type="button">Show more products</button>
+            </div>
+
+            <div class="product__footer-products">
+              <span class="product__footer-products-number">336</span>
+              <span class="product__footer-products-text">Products</span>
+            </div>
+          </footer>
+
+          </form>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <h2 class="visually-hidden">Best Products</h2>
+
+        <div class="footer-maps">
+          <section class="footer-map">
+
+            <h3 class="footer__heading">Get in touch</h3>
+
+            <ul class="footer-maps__list">
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">About us</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Careers</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Press Releases</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Blog</a>
+              </li>
+            </ul>
           </section>
 
-          <!-- PRODUCT (outcome) LIST -->
-          <section class="outcomes">
-            <h2 class="visually-hidden">Outcome heading</h2>
-            <ul class="outcomes__list outcomes__list--list ">
-              <li class="outcomes__item">
-                <div class="outcome outcome--list">
-                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
-
-                  <span class="outcome-discount"></span>
-
-                  <div class="outcome__box">
-                    <!-- LEFT SIDE  -->
-                    <div class="outcome__content-box">
-                      <h3 class="outcome__content-heading">Product heading</h3>
-                      <p class="outcome__info">Space for a small product description</p>
-                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
-                      <dl>
-                        <div>
-                          <dt>Fresheness</dt>
-                          <dd>New (Extra fresh)</dd>
-                        </div>
-                        <div>
-                          <dt>Farm</dt>
-                          <dd>Grocery Tarm Fields</dd>
-                        </div>
-                        <div>
-                          <dt>Delivery</dt>
-                          <dd>Europe</dd>
-                        </div>
-                        <div>
-                          <dt>Stock</dt>
-                          <dd>320 pcs</dd>
-                        </div>
-                      </dl>
-                    </div>
-                    <!-- RIGHT SIDE -->
-                    <div class="outcome__price-box">
-                      <div class="outcome__price-box-inner">
-                        <span class="outcome__price-new-rate">36.99 USD</span>
-                        <span class="outcome__price-old-rate">48.56</span>
-                      </div>
-                      <div class="outcome__price-content">
-                        <span class="outcome__price-text">Free Shipping</span>
-                        <span class="outcome__price-info">Delivery in 1 day</span>
-                      </div>
-                      <div class="outcome__price-buttons">
-                        <button class="outcome__price-button-details">Product Detail</button>
-                        <button class="outcome__price-button-buy">Buy now</button>
-                        <button class="outcome__price-button-add">Add to wish list</button>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
+          <section class="footer-map">
+            <h3 class="footer__heading">Connections</h3>
+            <ul class="footer-maps__list">
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Facebook</a>
               </li>
-
-              <li class="outcomes__item">
-                <div class="outcome outcome--list">
-                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
-
-                  <div class="outcome__box">
-                    <!-- LEFT SIDE  -->
-                    <div class="outcome__content-box">
-                      <h3 class="outcome__content-heading">Product heading</h3>
-                      <p class="outcome__info">Space for a small product description</p>
-                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
-                      <dl>
-                        <div>
-                          <dt>Fresheness</dt>
-                          <dd>New (Extra fresh)</dd>
-                        </div>
-                        <div>
-                          <dt>Farm</dt>
-                          <dd>Grocery Tarm Fields</dd>
-                        </div>
-                        <div>
-                          <dt>Delivery</dt>
-                          <dd>Europe</dd>
-                        </div>
-                        <div>
-                          <dt>Stock</dt>
-                          <dd>320 pcs</dd>
-                        </div>
-                      </dl>
-                    </div>
-                    <!-- RIGHT SIDE -->
-                    <div class="outcome__price-box">
-                      <div class="outcome__price-box-inner">
-                        <span class="outcome__price-new-rate">36.99 USD</span>
-                        <span class="outcome__price-old-rate">48.56</span>
-                      </div>
-                      <div class="outcome__price-content">
-                        <span class="outcome__price-text">Free Shipping</span>
-                        <span class="outcome__price-info">Delivery in 1 day</span>
-                      </div>
-                      <div class="outcome__price-buttons">
-                        <button class="outcome__price-button-details">Product Detail</button>
-                        <button class="outcome__price-button-buy">Buy now</button>
-                        <button class="outcome__price-button-add">Add to wish list</button>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Twitter</a>
               </li>
-
-              <li class="outcomes__item">
-                <div class="outcome outcome--list">
-                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
-
-                  <div class="outcome__box">
-                    <!-- LEFT SIDE  -->
-                    <div class="outcome__content-box">
-                      <h3 class="outcome__content-heading">Product heading</h3>
-                      <p class="outcome__info">Space for a small product description</p>
-                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
-                      <dl>
-                        <div>
-                          <dt>Fresheness</dt>
-                          <dd>New (Extra fresh)</dd>
-                        </div>
-                        <div>
-                          <dt>Farm</dt>
-                          <dd>Grocery Tarm Fields</dd>
-                        </div>
-                        <div>
-                          <dt>Delivery</dt>
-                          <dd>Europe</dd>
-                        </div>
-                        <div>
-                          <dt>Stock</dt>
-                          <dd>320 pcs</dd>
-                        </div>
-                      </dl>
-                    </div>
-                    <!-- RIGHT SIDE -->
-                    <div class="outcome__price-box">
-                      <div class="outcome__price-box-inner">
-                        <span class="outcome__price-new-rate">36.99 USD</span>
-                        <span class="outcome__price-old-rate">48.56</span>
-                      </div>
-                      <div class="outcome__price-content">
-                        <span class="outcome__price-text">Free Shipping</span>
-                        <span class="outcome__price-info">Delivery in 1 day</span>
-                      </div>
-                      <div class="outcome__price-buttons">
-                        <button class="outcome__price-button-details">Product Detail</button>
-                        <button class="outcome__price-button-buy">Buy now</button>
-                        <button class="outcome__price-button-add">Add to wish list</button>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Instagram</a>
               </li>
-
-              <li class="outcomes__item">
-                <div class="outcome outcome--list">
-                  <img class="outcome__img" src="img/outcome-img.jpg" width="270" height="280" alt="outcome image">
-
-                  <div class="outcome__box">
-                    <!-- LEFT SIDE  -->
-                    <div class="outcome__content-box">
-                      <h3 class="outcome__content-heading">Product heading</h3>
-                      <p class="outcome__info">Space for a small product description</p>
-                      <img class="outcome__star" src="img/outcome-star.svg" width="108" height="20" alt="outcome star">
-                      <dl>
-                        <div>
-                          <dt>Fresheness</dt>
-                          <dd>New (Extra fresh)</dd>
-                        </div>
-                        <div>
-                          <dt>Farm</dt>
-                          <dd>Grocery Tarm Fields</dd>
-                        </div>
-                        <div>
-                          <dt>Delivery</dt>
-                          <dd>Europe</dd>
-                        </div>
-                        <div>
-                          <dt>Stock</dt>
-                          <dd>320 pcs</dd>
-                        </div>
-                      </dl>
-                    </div>
-                    <!-- RIGHT SIDE -->
-                    <div class="outcome__price-box">
-                      <div class="outcome__price-box-inner">
-                        <span class="outcome__price-new-rate">36.99 USD</span>
-                        <span class="outcome__price-old-rate">48.56</span>
-                      </div>
-                      <div class="outcome__price-content">
-                        <span class="outcome__price-text">Free Shipping</span>
-                        <span class="outcome__price-info">Delivery in 1 day</span>
-                      </div>
-                      <div class="outcome__price-buttons">
-                        <button class="outcome__price-button-details">Product Detail</button>
-                        <button class="outcome__price-button-buy">Buy now</button>
-                        <button class="outcome__price-button-add">Add to wish list</button>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Youtube</a>
               </li>
-
-
-
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">LinkedIn</a>
+              </li>
             </ul>
+          </section>
+
+          <section class="footer-map">
+            <h3 class="footer__heading">Earnings</h3>
+
+            <ul class="footer-maps__list">
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Become an Affiliate</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Advertise your product</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Sell on Market</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="footer-map">
+            <h3 class="footer__heading">Account</h3>
+
+            <ul class="footer-maps__list">
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Your account</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Returns Centre</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">100 % purchase protection</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Chat with us</a>
+              </li>
+              <li class="footer-maps__item">
+                <a class="footer-maps__link" href="#">Help</a>
+              </li>
+            </ul>
+
           </section>
         </div>
 
+        <section class="product-tag">
+          <h2 class="product-tag__heading">Product tags</h2>
+          <ul class="product-tags">
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Beans</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Carrots</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Apples</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Garlic</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Beans</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Carrots</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Apples</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Garlic</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Beans</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Carrots</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Apples</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Garlic</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Beans</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Carrots</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Apples</a>
+            </li>
+            <li class="product-tags__item tags-item">
+              <a class="tags-item__link" href="#">Garlic</a>
+            </li>
+          </ul>
+        </section>
 
-      </form>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <h2 class="visually-hidden">Best Products</h2>
-
-    <div class="footer-maps">
-      <section class="footer-map">
-
-        <h3 class="footer__heading">Get in touch</h3>
-
-        <ul class="footer-maps__list">
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">About us</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Careers</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Press Releases</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Blog</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="footer-map">
-        <h3 class="footer__heading">Connections</h3>
-        <ul class="footer-maps__list">
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Facebook</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Twitter</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Instagram</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Youtube</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">LinkedIn</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="footer-map">
-        <h3 class="footer__heading">Earnings</h3>
-
-        <ul class="footer-maps__list">
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Become an Affiliate</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Advertise your product</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Sell on Market</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="footer-map">
-        <h3 class="footer__heading">Account</h3>
-
-        <ul class="footer-maps__list">
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Your account</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Returns Centre</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">100 % purchase protection</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Chat with us</a>
-          </li>
-          <li class="footer-maps__item">
-            <a class="footer-maps__link" href="#">Help</a>
-          </li>
-        </ul>
-
-      </section>
+        <div class="copyright">
+          <p class="copy-right__text">Copyright © 2020 petrbilek.com</p>
+        </div>
+      </footer>
     </div>
 
-    <section class="product-tag">
-      <h2 class="product-tag__heading">Product tags</h2>
-      <ul class="product-tags">
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Beans</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Carrots</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Apples</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Garlic</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Beans</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Carrots</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Apples</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Garlic</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Beans</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Carrots</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Apples</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Garlic</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Beans</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Carrots</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Apples</a>
-        </li>
-        <li class="product-tags__item tags-item">
-          <a class="tags-item__link" href="#">Garlic</a>
-        </li>
-      </ul>
-    </section>
 
-    <div class="copyright">
-      <p class="copy-right__text">Copyright © 2020 petrbilek.com</p>
+    <div class="search-modal modal">
+      <div class="modal-dialog">
+        <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="GET">
+          <input class="search-modal__input" type="search" name="search" aria-label="Search"
+          placeholder="Search products">
+        </form>
+      </div>
     </div>
-  </footer>
-</div>
 
+    <script src="js/main.js"></script>
 
-<div class="search-modal modal">
-  <div class="modal-dialog">
-    <form class="search-modal__form" action="https://echo.htmlacademy.ru" method="GET">
-      <input class="search-modal__input" type="search" name="search" aria-label="Search"
-      placeholder="Search products">
-    </form>
-  </div>
-</div>
+  </body>
 
-<script src="js/main.js"></script>
-
-</body>
-
-</html>
+  </html>

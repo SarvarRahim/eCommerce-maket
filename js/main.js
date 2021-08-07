@@ -45,6 +45,7 @@ var elGridViewButton = document.querySelector(".product-header__grid-view");
 var elListViewButton = document.querySelector(".product-header__list-view");
 var outComeList = document.querySelector(".outcomes__list");
 var outcomeItems = document.querySelectorAll(".outcome");
+var elGridAndList = document.querySelector(".product-header__boxes");
 
 // FUNCTION TO SWITCHINIG GRID VIEW
 function switchOutcomeToGridView(params) {
@@ -53,6 +54,8 @@ function switchOutcomeToGridView(params) {
   outcomeItems.forEach(function (outcomeItem){
     outcomeItem.classList.remove("outcome--list");
     outcomeItem.classList.add("outcome--grid");
+    elGridAndList.classList.add("product-header__boxes--grid");
+    elGridAndList.classList.remove("product-header__boxes--list");
 
   })
 }
@@ -65,7 +68,8 @@ function switchOutcomeToListView(params) {
   outcomeItems.forEach(function (outcomeItem){
     outcomeItem.classList.remove("outcome--grid");
     outcomeItem.classList.add("outcome--list");
-
+    elGridAndList.classList.remove("product-header__boxes--grid");
+    elGridAndList.classList.add("product-header__boxes--list");
   })
 }
 
@@ -78,4 +82,31 @@ if (elGridViewButton) {
 if (elListViewButton){
   elListViewButton.addEventListener("click", switchOutcomeToListView);
 }
+
+
+var elFilterButton = document.querySelector(".product-filter__button");
+var elProduct = document.querySelector(".product");
+var elProductfilterOpenInner = document.querySelector(".product-open-filter-inner");
+
+elFilterButton.addEventListener("click", function () {
+  elProduct.classList.add('product-filter-open');
+})
+
+
+window.addEventListener("click", (e) =>{
+  if(e.target == elProductfilterOpenInner ){
+    elProduct.classList.remove("product-filter-open");
+  }
+})
+
+
+
+
+window.addEventListener('resize', function(event){
+    var newWidth = window.innerWidth;
+    if (newWidth <= 910) {
+      switchOutcomeToGridView();
+    }
+});
+
 

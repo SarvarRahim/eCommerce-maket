@@ -44,7 +44,7 @@
   display: block;
   margin-right: 4px;
   content: '';
-  background-image: url("../../img/ic-layout-square-grid.svg");
+  background-image: url("../../img/icon-grid-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 16px;
@@ -60,11 +60,19 @@
   display: block;
   margin-right: 4px;
   content: '';
-  background-image: url("../../img/ic-layout.svg");
+  background-image: url("../../img/icon-list-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 16px;
   height: 16px;
+}
+
+.product-header__boxes--list .product-header__list-view::before {
+  background-image: url("../../img/icon-list.svg");
+}
+
+.product-header__boxes--grid .product-header__grid-view::before {
+  background-image: url("../../img/icon-grid.svg");
 }
 
 .product-header-view::before{
